@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EFMA - Play</title>
+    <link
+      rel="stylesheet"
+      href="../src/modules/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main container-fluid px-0">
+      <div class="header">
+        <div class="logo-box">
+          <a href="/"
+            ><img src="../src/images/site_images/EFMA.png" alt="EFMA Logo"
+          /></a>
+        </div>
+        <div class="nav-box">
+          <div class="mobile-nav d-md-none">
+            <label for="site-search" class="search-icon">
+              <svg
+                fill="#000"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                width="24px"
+                height="24px"
+                class="first-icon"
+              >
+                <path
+                  d="M 20.5 6 C 12.509634 6 6 12.50964 6 20.5 C 6 28.49036 12.509634 35 20.5 35 C 23.956359 35 27.133709 33.779044 29.628906 31.75 L 39.439453 41.560547 A 1.50015 1.50015 0 1 0 41.560547 39.439453 L 31.75 29.628906 C 33.779044 27.133709 35 23.956357 35 20.5 C 35 12.50964 28.490366 6 20.5 6 z M 20.5 9 C 26.869047 9 32 14.130957 32 20.5 C 32 23.602612 30.776198 26.405717 28.791016 28.470703 A 1.50015 1.50015 0 0 0 28.470703 28.791016 C 26.405717 30.776199 23.602614 32 20.5 32 C 14.130953 32 9 26.869043 9 20.5 C 9 14.130957 14.130953 9 20.5 9 z"
+                />
+              </svg>
+            </label>
+            <input type="search" name="site-search" id="site-search" />
+            <div class="bar-icon">
+              <svg
+                fill="#000"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24px"
+                height="24px"
+              >
+                <path
+                  d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z"
+                />
+              </svg>
+            </div>
+
+            <ul class="mobile-nav-dropdown">
+              <li><a href="/">HOME</a></li>
+              <li><a href="/about.html">ABOUT</a></li>
+              <li><a href="/service.html">SERVICE</a></li>
+              <li class="last"><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="desktop-nav d-md-flex">
+            <ul>
+              <li><a href="#" style="color: #bd202e">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section contact container-fluid" id="contact">
+        <div class="row">
+          <div class="col-12 col-xl-6">
+            <h6 class="contact-form-title text-left">PESONAL DATA</h6>
+
+            <form class="contact-form">
+              <input type="text" placeholder="Full Name" />
+
+              <input type="number" placeholder="Age" min="15" max="18" />
+              <select>
+                <option value="">Possition</option>
+
+                <option value="CF">CENTER FORWARD</option>
+                <option value="RW">RIGHT WING</option>
+                <option value="LW">LEFT WING</option>
+                <option value="MF">MID FEILD</option>
+
+                <option value="CD">CENTRAL DEFENSE</option>
+                <option value="WB">WING DEFENSE</option>
+              </select>
+              <select>
+                <option value="">Foot Order</option>
+
+                <option value="LEFT-FOOTED">LEFT</option>
+                <option value="RIGHT-FOOTED">RIGHT</option>
+              </select>
+              <input type="email" placeholder="E-mail" />
+              <button type="submit" disabled>SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

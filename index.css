@@ -82,7 +82,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
 
-  background: var(--background);
+  background: #ffe7d4;
   z-index: 6;
 }
 

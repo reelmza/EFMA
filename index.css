@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  border-radius: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --theme: #bd202e;
+  --global-padding: 0 10vmin;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Trebuchet MS", arial;
+  line-height: 1.2;
+  font-size: 3.5vmin;
+
+  color: #555;
+  padding-top: 13vh;
+}
+
+.header {
+  height: 13vh;
+  width: 100vw;
+  padding: 0 11vmin;
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+
+  z-index: 100;
+}
+
+/* S-logo */
+.logo-box {
+  height: 7vh;
+  width: 7vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--theme);
+}
+
+.logo-box img {
+  width: 100%;
+}
+
+/* S-nav */
+.nav-box {
+  height: 100%;
+}
+
+.desktop-nav,
+.mobile-nav {
+  display: none;
+  align-items: center;
+  height: 100%;
+}
+
+.desktop-nav ul {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  margin: 0;
+}
+
+.desktop-nav ul li {
+  list-style-type: none;
+  margin-right: 2vmin;
+  text-transform: uppercase;
+}
+
+.desktop-nav ul li a {
+  color: #555;
+}
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: fit-content;
+  width: 10vmin;
+}
+
+.mobile-nav svg {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.search-icon {
+  margin-right: 8vmin;
+}
+
+.mobile-nav-dropdown {
+  position: fixed;
+  top: 14vh;
+  right: 10vmin;
+  height: 40vh;
+  width: 80vmin;
+  padding: 5vmin;
+
+  background: #fff;
+  transition: 0.3s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.mobile-nav-dropdown .last {
+  border-bottom: none;
+}
+
+.mobile-nav-dropdown li {
+  list-style-type: none;
+  padding: 3vmin 0;
+  font-size: 4vmin;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.mobile-nav-dropdown li a {
+  color: #555;
+}
+
+/* S-hero */
+.hero {
+  height: 87vh;
+  background: var(--theme);
+  position: relative;
+}
+
+.hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  z-index: 0;
+}
+
+.hero-slider {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slider p {
+  color: #ffdeb8;
+  border-left: 1vmin solid #ffdeb8;
+  font-size: 7vmin;
+  padding-left: 8vmin;
+  margin: 3vmin 13vmin;
+}
+
+.hero-slider img {
+  height: 51.2px;
+}
+
+.hero-name {
+  color: #ffdeb8;
+  width: 100%;
+  padding-left: 22vmin;
+
+  font-size: 4vmin;
+}
+
+.hero-image {
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 80%;
+}
+
+/* S-section */
+.section {
+  padding: var(--global-padding);
+}
+
+.section-heading {
+  padding: 0vmin 15vmin;
+  color: #bd202e;
+}
+
+.section-heading h6 {
+  font-size: 7vmin;
+  text-align: center;
+}
+
+.section-item {
+  min-height: 45vmin;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 1vmin;
+  border-bottom: 1px solid #ddd;
+}
+
+.section-item-icon img {
+  height: 15vmin;
+}
+
+.section-item-heading {
+  font-size: 5vmin;
+  margin-bottom: 2vmin;
+}
+
+/* Tablets - md */
+@media only screen and (min-width: 768px) {
+  body {
+    padding-top: 9vh;
+  }
+  .header {
+    height: 9vh;
+    padding: 0 18vmin;
+  }
+
+  .hero {
+    height: 91vh;
+    background: var(--theme);
+  }
+
+  .section-heading {
+    padding: 10vmin 15vmin;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  :root {
+    --global-padding: 0 25vmin;
+  }
+  .header {
+    height: 9vh;
+    padding: 0 24vmin;
+  }
+
+  .logo-box {
+    height: 8vh;
+    width: 8vh;
+  }
+
+  .hero svg {
+    bottom: -15vh;
+  }
+}

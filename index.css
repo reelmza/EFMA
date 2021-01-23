@@ -177,7 +177,7 @@ body {
   color: #ffdeb8;
   border-left: 1vmin solid #ffdeb8;
 
-  font-size: 9vmin;
+  font-size: 10vmin;
   font-weight: 400;
   line-height: 1.4;
 
@@ -194,7 +194,7 @@ body {
   width: 100%;
   padding-left: 22vmin;
 
-  font-size: 4vmin;
+  font-size: 5vmin;
 }
 
 .hero-image {

@@ -132,7 +132,7 @@ body {
   position: fixed;
   top: 14vh;
   right: 10vmin;
-  height: 40vh;
+  height: 50vmin;
   width: 80vmin;
   padding: 5vmin;
 
@@ -148,8 +148,11 @@ body {
 
 .mobile-nav-dropdown li {
   list-style-type: none;
+
+  height: 10vmin;
   padding: 3vmin 0;
   font-size: 4vmin;
+
   border-bottom: 1px solid #e7e7e7;
 }
 
@@ -233,6 +236,7 @@ body {
 /* Section item - SERVICES*/
 .section-item {
   min-height: 45vmin;
+  margin-bottom: 10vmin;
   display: flex;
   flex-direction: column;
 
@@ -253,7 +257,8 @@ body {
 }
 
 .section-button {
-  padding: 3vmin;
+  padding: 4vmin 0vmin;
+  width: 40vmin;
   background: var(--theme);
   margin-bottom: 1vmin;
 }

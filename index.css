@@ -132,7 +132,7 @@ body {
   position: fixed;
   top: 14vh;
   right: 10vmin;
-  height: 50vmin;
+  height: 90vmin;
   width: 80vmin;
   padding: 5vmin;
 
@@ -149,9 +149,11 @@ body {
 .mobile-nav-dropdown li {
   list-style-type: none;
 
-  height: 10vmin;
-  padding: 3vmin 0;
-  font-size: 4vmin;
+  height: 20vmin;
+  font-size: 6vmin;
+
+  display: flex;
+  align-items: center;
 
   border-bottom: 1px solid #e7e7e7;
 }

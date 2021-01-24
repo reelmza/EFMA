@@ -5,7 +5,7 @@ let sidebar_state = 0
 sidebar.addEventListener('click', function () {
     console.log('click')
     if (sidebar_state == 0) {
-        sidebar_dropdown.style.height = '50vmin'
+        sidebar_dropdown.style.height = '90vmin'
         sidebar_dropdown.style.opacity = "1"
         return sidebar_state = 1
     }

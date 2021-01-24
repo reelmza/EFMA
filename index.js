@@ -1,15 +1,33 @@
-const sidebar = document.getElementsByClassName('bar-icon')[0]
+const sidebarBtn = document.getElementsByClassName('bar-icon')[0]
 const sidebar_dropdown = document.getElementsByClassName('mobile-nav-dropdown')[0]
 
+const searchBtn = document.getElementsByClassName('search-icon')[0]
+const searchInput = document.getElementById('site-search')
+
 let sidebar_state = 0
-sidebar.addEventListener('click', function () {
-    console.log('click')
+let search_state = 0
+
+sidebarBtn.addEventListener('click', function () {
+    console.log('Sidebar Click')
     if (sidebar_state == 0) {
         sidebar_dropdown.style.height = '90vmin'
-        sidebar_dropdown.style.opacity = "1"
+        sidebar_dropdown.style.top = "16vh"
         return sidebar_state = 1
     }
     sidebar_dropdown.style.height = '0px'
-    sidebar_dropdown.style.opacity = "0"
+    sidebar_dropdown.style.top = "-14vh"
     return sidebar_state = 0
+})
+
+searchBtn.addEventListener('click', function () {
+    console.log('Search Click')
+    if (search_state == 0) {
+        searchInput.style.top = '25%'
+        searchBtn.style.marginRight = '40vmin'
+        return search_state = 1
+    }
+
+    searchInput.style.top = '-50%'
+    searchBtn.style.marginRight = '8vmin'
+    return search_state = 0
 })

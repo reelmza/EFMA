@@ -61,7 +61,7 @@ body {
   background: #fff;
   border-bottom: 1px solid #ddd;
 
-  z-index: 100;
+  z-index: 6;
 }
 
 /* S-logo */
@@ -117,6 +117,8 @@ body {
 
   width: fit-content;
   width: 10vmin;
+
+  position: relative;
 }
 
 .mobile-nav svg {
@@ -126,20 +128,35 @@ body {
 
 .search-icon {
   margin-right: 8vmin;
+  transition: 0.3s;
 }
 
+#site-search {
+  border: solid 1px #a5a4a4;
+
+  height: 50%;
+  width: 40vmin;
+  padding: 0 4vmin;
+
+  position: absolute;
+  top: -50%;
+  transition: 0.3s;
+
+  outline: none;
+}
 .mobile-nav-dropdown {
   position: fixed;
-  top: 14vh;
-  right: 10vmin;
-  height: 90vmin;
-  width: 80vmin;
+  height: 0vmin;
+  width: 90vmin;
   padding: 5vmin;
 
+  top: -14vh;
+  right: 5vmin;
+
   background: #fff;
-  transition: 0.3s;
-  opacity: 0;
-  z-index: 10;
+  transition: 0.5s;
+  z-index: 5;
+  overflow: hidden;
 }
 
 .mobile-nav-dropdown .last {
@@ -259,14 +276,15 @@ body {
 }
 
 .section-button {
-  padding: 4vmin 0vmin;
   width: 40vmin;
+  height: 15vmin;
   background: var(--theme);
   margin-bottom: 1vmin;
 }
 
 .section-button:hover {
   background: #000;
+  border: none;
 }
 
 .section-button a {
@@ -280,22 +298,54 @@ body {
   background: var(--theme);
   margin-bottom: 0;
 }
+
 .patners-section-item {
   border: none;
 }
 
 .patners-section-heading {
-  padding: 0;
+  padding: 10vmin 0 0 0;
 }
+
 .patners-section-heading h6 {
-  color: #ffdeb8;
+  color: #fff;
   text-align: left;
 }
 
 .patners-section-item-text {
-  color: #ffdeb8;
+  color: #fff;
+  padding-bottom: 10vmin;
+  border-bottom: 1px solid #fff;
 }
 
+.patners-logo {
+  margin: 0;
+  padding-top: 5vmin;
+}
+.patner-logo-item {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.patner-logo-item img {
+  width: 70%;
+}
+
+.patner-logo-item h6 {
+  font-size: 6vmin;
+  color: #fff;
+}
+
+.patners-section-button {
+  border: solid 1vmin #fff;
+}
+
+.patners-section-button a {
+  color: #fff;
+}
 /* Tablets - md */
 @media only screen and (min-width: 768px) {
   body {
@@ -316,7 +366,7 @@ body {
   }
 
   .patners-section-heading {
-    padding: 0px;
+    padding: 10vmin 0 0 0;
   }
 
   .section-item {

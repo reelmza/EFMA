@@ -318,8 +318,6 @@ body {
 
 .patners-section-item-text {
   color: #fff;
-  padding-bottom: 10vmin;
-  border-bottom: 1px solid #fff;
 }
 
 .patners-logo {
@@ -330,8 +328,6 @@ body {
 
   background: url("src/images/other_images/stadium_top.jpg") no-repeat center;
   background-size: cover;
-
-  backdrop-filter: blur(10px);
   position: relative;
 }
 

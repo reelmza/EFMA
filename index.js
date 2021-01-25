@@ -22,12 +22,12 @@ sidebarBtn.addEventListener('click', function () {
 searchBtn.addEventListener('click', function () {
     console.log('Search Click')
     if (search_state == 0) {
-        searchInput.style.top = '25%'
-        searchBtn.style.marginRight = '40vmin'
+        searchInput.style.right = '0'
+        searchBtn.style.marginRight = '48vmin'
         return search_state = 1
     }
 
-    searchInput.style.top = '-50%'
-    searchBtn.style.marginRight = '8vmin'
+    searchInput.style.right = null
+    searchBtn.style.marginRight = null
     return search_state = 0
 })

@@ -1,3 +1,6 @@
+/* Theme Dark #c10024 */
+/* Theme Bright #ff0030 */
+
 *,
 *::before,
 *::after {
@@ -29,7 +32,8 @@ h6 {
   padding: 0;
 }
 :root {
-  --theme: #bd202e;
+  /* --theme: #bd202e; */
+  --theme: #c10024;
   --global-padding: 0 10vmin;
 }
 
@@ -135,11 +139,11 @@ body {
   border: solid 1px #a5a4a4;
 
   height: 50%;
-  width: 40vmin;
+  width: 50vmin;
   padding: 0 4vmin;
 
   position: absolute;
-  top: -50%;
+  right: -100vw;
   transition: 0.3s;
 
   outline: none;
@@ -320,8 +324,30 @@ body {
 
 .patners-logo {
   margin: 0;
+  padding: var(--global-padding);
+  padding-bottom: 5vmin;
   padding-top: 5vmin;
+
+  background: url("src/images/other_images/stadium_top.jpg") no-repeat center;
+  background-size: cover;
+
+  backdrop-filter: blur(10px);
+  position: relative;
 }
+
+.patners-logo-bg {
+  height: 100%;
+  width: 100%;
+
+  left: 0;
+  top: 0;
+  position: absolute;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.4);
+
+  z-index: -1;
+}
+
 .patner-logo-item {
   display: flex;
 
@@ -340,12 +366,10 @@ body {
 }
 
 .patners-section-button {
-  border: solid 1vmin #fff;
+  background: var(--theme);
+  margin-top: 5vmin;
 }
 
-.patners-section-button a {
-  color: #fff;
-}
 /* Tablets - md */
 @media only screen and (min-width: 768px) {
   body {

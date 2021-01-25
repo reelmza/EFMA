@@ -323,23 +323,11 @@ body {
 .patners-logo {
   margin: 0;
   padding: var(--global-padding);
-  padding-bottom: 5vmin;
   padding-top: 5vmin;
 
   background: url("src/images/other_images/stadium_top.jpg") no-repeat center;
   background-size: cover;
   position: relative;
-}
-
-.patners-logo-bg {
-  height: 100%;
-  width: 100%;
-
-  left: 0;
-  top: 0;
-  position: absolute;
-
-  z-index: -1;
 }
 
 .patner-logo-item {
@@ -358,10 +346,16 @@ body {
   font-size: 6vmin;
   color: #fff;
 }
+.patners-section-button-container {
+  background: #fff;
+  margin: 0 -10vmin;
 
+  display: flex;
+  align-items: center;
+}
 .patners-section-button {
   background: var(--theme);
-  margin-top: 5vmin;
+  margin: 3vmin 6vmin;
 }
 
 /* Tablets - md */

@@ -354,7 +354,7 @@ body {
   align-items: center;
 }
 .patners-section-button {
-  background: var(--theme);
+  background: #144106;
   margin: 3vmin 6vmin;
 }
 

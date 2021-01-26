@@ -404,9 +404,10 @@ body {
 
 .team-text p,
 .team-goals-heading {
+  font-family: "Montserrat";
   padding: 15vmin 5vmin;
   font-size: 5vmin;
-  color: #ffdeb8;
+  color: #fff;
 
   border-bottom: 1px solid #fff;
 }
@@ -418,6 +419,7 @@ body {
   font-size: 15vmin;
   border-bottom: none;
   line-height: 1.5;
+  color: #ffdeb8;
 }
 
 .team-goals-item {

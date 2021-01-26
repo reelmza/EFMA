@@ -391,12 +391,12 @@ body {
   min-height: 400vmin;
   width: 100%;
 
-  padding-top: 20vmin;
+  padding-top: 60vmin;
 
   top: 40vmin;
   left: 0;
 
-  background: #fcd21d;
+  background: #000;
 
   position: absolute;
   z-index: -1;
@@ -406,7 +406,7 @@ body {
 .team-goals-heading {
   padding: 15vmin 5vmin;
   font-size: 5vmin;
-  color: #000;
+  color: #fff;
 
   border-bottom: 1px solid #fff;
 }
@@ -434,11 +434,11 @@ body {
 
 .team-goals-item p {
   padding: 6vmin 5vmin;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
 }
 
 .players {
-  margin-top: 375vmin;
+  margin-top: 400vmin;
 }
 
 .player-container {

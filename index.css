@@ -209,11 +209,12 @@ body {
 }
 
 .hero-slider p {
+  font-family: "Oswald";
+  font-weight: 500;
   color: #ffdeb8;
   border-left: 1vmin solid #ffdeb8;
 
   font-size: 10vmin;
-  font-weight: 400;
   line-height: 1.4;
 
   padding-left: 8vmin;
@@ -253,6 +254,8 @@ body {
 }
 
 .section-heading h6 {
+  font-family: "Oswald";
+  font-weight: 400;
   font-size: 8vmin;
   text-align: center;
 }
@@ -370,7 +373,7 @@ body {
 
 .team-photo,
 .player-image {
-  height: 50vmin;
+  height: 60vmin;
   border: solid 5vmin #fff;
   background: url("src/images/other_images/group_pic.jpg") center no-repeat;
   background-size: cover;
@@ -405,6 +408,8 @@ body {
 }
 
 .team-goals-heading {
+  font-family: "Oswald";
+  font-weight: 500;
   padding: 5vmin 5vmin;
   font-size: 13vmin;
   border-bottom: none;

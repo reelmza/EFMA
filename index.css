@@ -251,7 +251,7 @@ body {
 
 .section-heading {
   padding: 10vmin 5vmin;
-  color: #bd202e;
+  color: #000;
 }
 
 .section-heading h6 {
@@ -333,7 +333,7 @@ body {
   padding: var(--global-padding);
   padding-top: 5vmin;
 
-  background: url("src/images/other_images/stadium_top.jpg") no-repeat center;
+  /* background: url("src/images/other_images/stadium_top.jpg") no-repeat center; */
   background-size: cover;
   position: relative;
 }
@@ -354,7 +354,7 @@ body {
 
 .patner-logo-item h6 {
   font-size: 6vmin;
-  color: #fff;
+  color: #000;
 }
 .patners-section-button-container {
   background: #fff;
@@ -393,7 +393,7 @@ body {
 
   padding-top: 60vmin;
 
-  top: 40vmin;
+  top: 45vmin;
   left: 0;
 
   background: #000;
@@ -406,7 +406,7 @@ body {
 .team-goals-heading {
   padding: 15vmin 5vmin;
   font-size: 5vmin;
-  color: #fff;
+  color: #ffdeb8;
 
   border-bottom: 1px solid #fff;
 }
@@ -434,6 +434,8 @@ body {
 
 .team-goals-item p {
   padding: 6vmin 5vmin;
+  color: #fff;
+
   border-bottom: 1px solid #fff;
 }
 

@@ -368,9 +368,10 @@ body {
   margin-bottom: 0;
 }
 
-.team-photo {
+.team-photo,
+.player-image {
   height: 50vmin;
-  border: solid 3vmin #fff;
+  border: solid 5vmin #fff;
   background: url("src/images/other_images/group_pic.jpg") center no-repeat;
   background-size: cover;
   box-shadow: 0px -1px 3px #c4c4c4;
@@ -380,7 +381,7 @@ body {
 }
 
 .team-text {
-  min-height: 40vmin;
+  min-height: 400vmin;
   width: 100%;
 
   padding-top: 20vmin;
@@ -424,6 +425,48 @@ body {
 .team-goals-item p {
   padding: 6vmin 5vmin;
   border-bottom: 1px solid #000;
+}
+
+.players {
+  margin-top: 375vmin;
+}
+
+.player-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-bottom: 10vmin;
+}
+
+.player-image {
+  width: 100%;
+  margin: 0 -10vmin;
+
+  margin-bottom: 3vmin;
+}
+
+/* S-contact  */
+.contact {
+  margin-bottom: 0;
+  background: #000;
+  color: #fff;
+
+  padding-bottom: 3vmin;
+}
+
+.contact .section-heading {
+  padding: 5vmin 0;
+  color: #fff;
+}
+
+.contact-item {
+  margin-bottom: 5vmin;
+}
+
+.contact-item h6 {
+  font-size: 5.5vmin;
 }
 /* Tablets - md */
 @media only screen and (min-width: 768px) {

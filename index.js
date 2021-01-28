@@ -31,3 +31,21 @@ searchBtn.addEventListener('click', function () {
     searchBtn.style.marginRight = null
     return search_state = 0
 })
+
+var swiper = new Swiper('.swiper-container', {
+    init: true,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: true
+    },
+
+
+    speed: 1300,
+    spaceBetween: 100,
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets'
+    }
+})

@@ -33,7 +33,7 @@ h6 {
 }
 :root {
   /* --theme: #bd202e; */
-  --theme: #c10024;
+  --theme: #000;
   --global-padding: 0 10vmin;
 }
 
@@ -45,9 +45,9 @@ body {
   font-family: "Oswald", "Trebuchet MS", arial;
   line-height: 1.3;
   font-weight: 400;
-  font-size: 3.5vmin;
+  font-size: 5vmin;
 
-  color: #222;
+  color: #000;
   background: rgb(255, 255, 255);
   padding-top: 13vh;
 }
@@ -150,6 +150,7 @@ body {
 
   outline: none;
 }
+
 .mobile-nav-dropdown {
   position: fixed;
   height: 0vmin;
@@ -185,7 +186,15 @@ body {
   color: #555;
 }
 
-/* S-hero */
+/* 
+.
+.
+.
+.
+.
+.
+S-hero */
+
 .hero {
   height: 87vh;
   background: var(--theme);
@@ -243,26 +252,33 @@ body {
   max-width: 80%;
 }
 
-/* S-section */
+/* .
+.
+.
+.
+.
+.
+.
+S - Section */
+
 .section {
   padding: var(--global-padding);
-  margin-bottom: 10vmin;
+  padding-bottom: 5vmin;
 }
 
-.section-heading {
-  padding: 10vmin 5vmin;
+.explain-heading {
+  padding: 5vmin 0;
   color: #000;
 }
 
-.section-heading h6 {
+.explain-heading h6 {
   font-family: "Oswald";
   font-weight: 400;
   font-size: 15vmin;
-  text-align: center;
+  text-align: left;
 }
 
-/* Section item - SERVICES*/
-.section-item {
+.explain-item {
   padding-bottom: 10vmin;
   margin-bottom: 10vmin;
   display: flex;
@@ -271,62 +287,75 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-.section-item-icon img {
+.explain-item-icon img {
   height: 20vmin;
 }
 
-.section-item-heading {
+.explain-item-heading {
   font-size: 6vmin;
   margin-bottom: 2vmin;
 }
 
-.section-item-text {
+.explain-item-text {
   font-size: 5vmin;
   font-family: "Montserrat";
 }
 
-.section-button {
+.explain-button {
   width: 40vmin;
   height: 15vmin;
   background: var(--theme);
   margin-bottom: 1vmin;
 }
 
-.section-button:hover {
+.explain-button:hover {
   background: #000;
   border: none;
 }
 
-.section-button a {
+.explain-button a {
   font-family: "Oswald";
   color: #fff;
   text-decoration: none;
   font-size: 5vmin;
 }
 
-/* Section Item - PATNERS */
+/* 
+.
+.
+.
+.
+.
+.
+S - Box Model */
+
+.box-heading {
+  padding: 20vmin 10vmin 10vmin 10vmin;
+  background: #000;
+}
+
+.box-heading h6 {
+  color: #fff;
+  font-size: 10vmin;
+}
+
+.box-heading p {
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+/* .
+.
+.
+.
+.
+.
+.
+S - Patner */
+
 .patners {
   background: var(--theme);
-  margin-bottom: 0;
-}
-
-.patners-section-item {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.patners-section-heading {
-  padding: 10vmin 0 0 0;
-}
-
-.patners-section-heading h6 {
-  color: #ffdeb8;
-  text-align: left;
-}
-
-.patners-section-item-text {
-  color: #ffdeb8;
+  padding-bottom: 0;
 }
 
 .patners-logo {
@@ -335,11 +364,7 @@ body {
   background: #fff;
 }
 
-.patner-logo-row {
-  background: red;
-}
-
-.patner-logo-item {
+.patners-logo-item {
   display: flex;
 
   flex-direction: column;
@@ -349,122 +374,57 @@ body {
   padding-bottom: 5vmin;
 }
 
-.patner-logo-item img {
+.patners-logo-item img {
   width: 30%;
 }
 
-.patner-logo-item h6 {
+.patners-logo-item h6 {
   font-size: 6vmin;
   color: #000;
 }
-.patners-section-button-container {
-  background: #fff;
-  margin: 0 -10vmin;
 
-  display: flex;
-  align-items: center;
-}
+/* .
+.
+.
+.
+.
+.
+.
+S -Team */
 
-.patners-section-button {
-  background: #000;
-  margin: 3vmin 6vmin;
-}
-
-/* S- team photo */
 .team {
-  margin-bottom: 0;
-}
-
-.team-photo,
-.player-image {
-  height: 60vmin;
-  border: solid 5vmin #fff;
-  background: url("src/images/other_images/group_pic.jpg") center no-repeat;
-  background-size: cover;
-}
-
-.team-text {
-  background: #000;
-}
-
-.team-text .section-heading {
-  color: #ffdeb8;
+  background: var(--theme);
   padding-bottom: 0;
 }
 
-.team-text .section-heading h6 {
-  text-align: left;
-}
-
-.team-text p,
-.team-goals-heading {
-  font-family: "Montserrat";
-  padding: 0vmin 5vmin;
-  font-size: 5vmin;
-  color: #ffdeb8;
-}
-
-.team-goals {
+.team-carousel-container {
+  padding: 0vmin 5vmin 5vmin 5vmin;
   background: #fff;
 }
 
-.team-goals-heading {
-  font-family: "Oswald";
-  font-weight: 500;
-  padding: 5vmin 5vmin;
-  font-size: 15vmin;
-  border-bottom: none;
-  line-height: 1.5;
-
-  color: #000;
+.team-carousel-heading h6 {
+  font-size: 5vmin;
 }
 
-.team-goals-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.team-carousel-heading {
+  padding: 5vmin 0;
 }
 
-.team-goals-item h6 {
-  font-size: 25vmin;
-  color: #000;
+.swiper-slide {
+  height: 40vmin;
 }
-
-.team-goals-item p {
-  padding: 6vmin 5vmin;
-  color: #000;
-
-  border-bottom: 1px solid #000;
+.slider-image {
+  height: 40vmin;
 }
+/* 
+.
+.
+.
+.
+.
+.
+S-contact  */
 
-/* S-players */
-.players .section-heading {
-  margin: 0;
-  padding: 0;
-}
-
-.players .section-heading h6 {
-  text-align: left;
-}
-
-.player-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  margin-bottom: 10vmin;
-}
-
-.player-image {
-  width: 100%;
-  margin: 0 -10vmin;
-
-  margin-bottom: 3vmin;
-}
-
-/* S-contact  */
 .contact {
   margin-bottom: 0;
   background: #000;
@@ -491,7 +451,7 @@ body {
 }
 
 /* Tablets - md */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   body {
     padding-top: 9vh;
   }
@@ -509,7 +469,7 @@ body {
     padding: 15vmin 0vmin;
   }
 
-  .patners-section-heading {
+  .box-section-heading {
     padding: 10vmin 0 0 0;
   }
 
@@ -535,4 +495,4 @@ body {
   .hero svg {
     bottom: -15vh;
   }
-}
+} */

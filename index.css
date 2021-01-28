@@ -221,8 +221,8 @@ S-hero */
 .hero-slider p {
   font-family: "Oswald";
   font-weight: 500;
-  color: #ffdeb8;
-  border-left: 1vmin solid #ffdeb8;
+  color: #fff;
+  border-left: 1vmin solid #fff;
 
   font-size: 10vmin;
   line-height: 1.4;
@@ -236,7 +236,7 @@ S-hero */
 }
 
 .hero-name {
-  color: #ffdeb8;
+  color: #fff;
   width: 100%;
   padding-left: 22vmin;
 
@@ -416,83 +416,3 @@ S -Team */
 .slider-image {
   height: 40vmin;
 }
-/* 
-.
-.
-.
-.
-.
-.
-S-contact  */
-
-.contact {
-  margin-bottom: 0;
-  background: #000;
-  color: #fff;
-
-  padding-bottom: 3vmin;
-}
-
-.contact .section-heading {
-  padding: 5vmin 0;
-  color: #fff;
-}
-
-.contact-item {
-  margin-bottom: 5vmin;
-}
-
-.contact-item h6 {
-  font-size: 5.5vmin;
-}
-
-.last {
-  border: none !important;
-}
-
-/* Tablets - md */
-/* @media only screen and (min-width: 768px) {
-  body {
-    padding-top: 9vh;
-  }
-  .header {
-    height: 9vh;
-    padding: 0 18vmin;
-  }
-
-  .hero {
-    height: 91vh;
-    background: var(--theme);
-  }
-
-  .section-heading {
-    padding: 15vmin 0vmin;
-  }
-
-  .box-section-heading {
-    padding: 10vmin 0 0 0;
-  }
-
-  .section-item {
-    border-bottom: none;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  :root {
-    --global-padding: 0 25vmin;
-  }
-  .header {
-    height: 9vh;
-    padding: 0 24vmin;
-  }
-
-  .logo-box {
-    height: 8vh;
-    width: 8vh;
-  }
-
-  .hero svg {
-    bottom: -15vh;
-  }
-} */

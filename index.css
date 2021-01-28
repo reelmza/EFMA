@@ -263,7 +263,6 @@ body {
 
 /* Section item - SERVICES*/
 .section-item {
-  min-height: 45vmin;
   padding-bottom: 10vmin;
   margin-bottom: 10vmin;
   display: flex;
@@ -313,6 +312,8 @@ body {
 
 .patners-section-item {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .patners-section-heading {
@@ -320,22 +321,22 @@ body {
 }
 
 .patners-section-heading h6 {
-  color: #fff;
+  color: #ffdeb8;
   text-align: left;
 }
 
 .patners-section-item-text {
-  color: #fff;
+  color: #ffdeb8;
 }
 
 .patners-logo {
   margin: 0;
-  padding: var(--global-padding);
   padding-top: 5vmin;
+  background: #fff;
+}
 
-  /* background: url("src/images/other_images/stadium_top.jpg") no-repeat center; */
-  background-size: cover;
-  position: relative;
+.patner-logo-row {
+  background: red;
 }
 
 .patner-logo-item {
@@ -365,13 +366,12 @@ body {
 }
 
 .patners-section-button {
-  background: #144106;
+  background: #000;
   margin: 3vmin 6vmin;
 }
 
 /* S- team photo */
 .team {
-  position: relative;
   margin-bottom: 0;
 }
 
@@ -381,35 +381,31 @@ body {
   border: solid 5vmin #fff;
   background: url("src/images/other_images/group_pic.jpg") center no-repeat;
   background-size: cover;
-  box-shadow: 0px -1px 3px #c4c4c4;
-
-  margin: 0 -5vmin;
-  z-index: 3;
 }
 
 .team-text {
-  min-height: 400vmin;
-  width: 100%;
-
-  padding-top: 60vmin;
-
-  top: 45vmin;
-  left: 0;
-
   background: #000;
+}
 
-  position: absolute;
-  z-index: -1;
+.team-text .section-heading {
+  color: #ffdeb8;
+  padding-bottom: 0;
+}
+
+.team-text .section-heading h6 {
+  text-align: left;
 }
 
 .team-text p,
 .team-goals-heading {
   font-family: "Montserrat";
-  padding: 15vmin 5vmin;
+  padding: 0vmin 5vmin;
   font-size: 5vmin;
-  color: #fff;
+  color: #ffdeb8;
+}
 
-  border-bottom: 1px solid #fff;
+.team-goals {
+  background: #fff;
 }
 
 .team-goals-heading {
@@ -419,7 +415,8 @@ body {
   font-size: 15vmin;
   border-bottom: none;
   line-height: 1.5;
-  color: #ffdeb8;
+
+  color: #000;
 }
 
 .team-goals-item {
@@ -431,18 +428,24 @@ body {
 
 .team-goals-item h6 {
   font-size: 25vmin;
-  color: #fff;
+  color: #000;
 }
 
 .team-goals-item p {
   padding: 6vmin 5vmin;
-  color: #fff;
+  color: #000;
 
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #000;
 }
 
-.players {
-  margin-top: 400vmin;
+/* S-players */
+.players .section-heading {
+  margin: 0;
+  padding: 0;
+}
+
+.players .section-heading h6 {
+  text-align: left;
 }
 
 .player-container {
@@ -482,6 +485,11 @@ body {
 .contact-item h6 {
   font-size: 5.5vmin;
 }
+
+.last {
+  border: none !important;
+}
+
 /* Tablets - md */
 @media only screen and (min-width: 768px) {
   body {

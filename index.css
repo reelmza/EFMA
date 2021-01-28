@@ -411,8 +411,13 @@ S -Team */
 }
 
 .swiper-slide {
-  height: 40vmin;
+  height: 55vmin;
 }
 .slider-image {
   height: 40vmin;
+}
+
+.slider-caption {
+  display: flex;
+  justify-content: center;
 }

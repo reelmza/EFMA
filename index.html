@@ -18,6 +18,10 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+    />
     <link rel="stylesheet" href="index.css" />
 
     <!-- Font, Font, Font -->
@@ -97,9 +101,9 @@
       </div>
 
       <div class="hero container-fluid">
-        <div class="row">
+        <div class="row wow zoomIn">
           <div class="hero-slider col-12 col-lg-6 px-0">
-            <img src="src/images/other_images/quote1.svg" alt="" />
+            <img src="src/images/other_images/quote1.svg" alt="quote vector" />
             <p>
               We look for the best talents out there and give them the best
               chances they can think of.
@@ -107,7 +111,11 @@
             <h6 class="hero-name">-Peter D. Oaya [GM]</h6>
           </div>
           <div class="hero-image col-l6-6 d-none d-lg-flex">
-            <img src="src/images/site_images/EFMA.png" alt="efma logo" />
+            <img
+              src="src/images/site_images/EFMA.png"
+              alt="efma logo"
+              class="d-none"
+            />
           </div>
         </div>
 
@@ -120,7 +128,7 @@
         </svg>
       </div>
 
-      <div class="section explain container-fluid">
+      <div class="section explain container-fluid wow zoomIn">
         <div class="row">
           <div class="col-12 explain-heading">
             <h6>WHAT WE DO AT EFMA</h6>
@@ -170,7 +178,7 @@
       <div class="section patners px-0 container-fluid">
         <div class="box-heading container-fluid">
           <div class="row">
-            <div class="col-12 px-0">
+            <div class="col-12 px-0 wow fadeIn">
               <h6>OUR PATNERS</h6>
               <p>
                 We have patnered with big names over the years to deliver record
@@ -182,7 +190,7 @@
         </div>
 
         <div class="patners-logo container-fluid">
-          <div class="row">
+          <div class="row wow zoomIn">
             <div class="col-md-4 mb-5 mb-md-0 patners-logo-item">
               <img
                 src="src/images/other_images/patner_1.svg"
@@ -217,12 +225,12 @@
       <div class="section team px-0 container-fluid">
         <div class="box-heading container-fluid">
           <div class="row">
-            <div class="col-12 px-0">
+            <div class="col-12 px-0 wow zoomIn">
               <h6>OUR TEAM</h6>
               <p>
-                We have patneres with some of the best talents arround the state
-                to deliver industry standard services to our reputable
-                organisation
+                We have scouted for hundreds of ours to find the brightest stars
+                in our reach and take them to better heights, heres an overview
+                of some of this players
               </p>
             </div>
           </div>
@@ -287,8 +295,28 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
+
+        <div class="box-paragraph container-fluid">
+          <div class="row">
+            <div class="col-12 px-0">
+              <p>
+                A comprehensive galery of players we scouted and endorsed, most
+                of which have now found thier places in rofesional clubs or
+                thier respective state's squad. <br />
+                <br />
+                Our players are free to leave whenever they want based on the
+                agreed terms with no commitments!
+              </p>
+            </div>
+            <button class="explain-button">
+              <a href="#"> ALL SERVICES</a>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
   </body>

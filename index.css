@@ -37,6 +37,8 @@ h6 {
   /* --theme: #bd202e; */
 
   --global-padding: 0 10vmin;
+  --animate-duration: 1000ms;
+  /* --animate-delay: 10s; */
 }
 
 html {
@@ -363,6 +365,14 @@ S - Box Model */
   color: #fff;
 }
 
+.box-paragraph {
+  font-family: "Montserrat";
+  font-size: 3.5vmin;
+  text-align: justify;
+  padding: 10vmin 10vmin 5vmin 10vmin;
+  background: #fff;
+}
+
 /* .
 .
 .
@@ -422,7 +432,7 @@ S -Team */
 }
 
 .swiper-slide {
-  height: 60vmin; /* 40vmin for imge, 10vmin for caption, 10 for carousel dots */
+  height: 55vmin; /* 40vmin for imge, 10vmin for caption, 5 for carousel dots */
 }
 
 .slider-image {

@@ -280,23 +280,15 @@ S-hero */
 .
 .
 .
-S - Section */
+S - Explain */
 
 .section {
   padding: var(--global-padding);
   padding-bottom: 5vmin;
 }
 
-.explain-heading {
-  padding: 5vmin 0;
-  color: #000;
-}
-
-.explain-heading h6 {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-size: 15vmin;
-  text-align: left;
+.explain-wrapper {
+  padding: var(--global-padding);
 }
 
 .explain-item {
@@ -373,6 +365,16 @@ S - Box Model */
   background: #fff;
 }
 
+.explain-box-heading {
+  background: #ffe5ec;
+  color: #000;
+}
+
+.explain-box-heading h6,
+.explain-box-heading p {
+  color: #000;
+}
+
 /* .
 .
 .
@@ -419,14 +421,16 @@ S - Patner */
 .
 .
 .
-S -Team */
+S -Team & S - staff*/
 
-.team {
+.team,
+.staff {
   background: var(--theme);
   padding-bottom: 0;
 }
 
-.team-carousel-container {
+.team-carousel-container,
+.staff-carousel-container {
   padding: 0vmin 5vmin;
   background: #fff;
 }
@@ -445,8 +449,4 @@ S -Team */
   align-items: center;
 
   height: 10vmin;
-}
-
-.swiper-pagination span {
-  background: #000;
 }

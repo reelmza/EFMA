@@ -312,7 +312,7 @@ S - Explain */
 
 .explain-item-text {
   font-size: 5vmin;
-  font-family: "Fira Sans";
+  font-family: "Roboto";
 }
 
 .explain-button {
@@ -354,12 +354,13 @@ S - Box Model */
 }
 
 .box-heading p {
-  font-family: "Fira Sans";
+  font-family: "Roboto";
+  font-weight: 400;
   color: #fff;
 }
 
 .box-paragraph {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   font-size: 3.5vmin;
   text-align: justify;
   padding: 10vmin 10vmin 5vmin 10vmin;

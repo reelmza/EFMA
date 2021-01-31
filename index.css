@@ -422,7 +422,7 @@ S -Team */
 }
 
 .swiper-slide {
-  height: 50vmin; /* 40vmin for imge & 10vmin for caption */
+  height: 60vmin; /* 40vmin for imge, 10vmin for caption, 10 for carousel dots */
 }
 
 .slider-image {
@@ -435,4 +435,8 @@ S -Team */
   align-items: center;
 
   height: 10vmin;
+}
+
+.swiper-pagination span {
+  background: #000;
 }

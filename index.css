@@ -31,9 +31,11 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
 :root {
-  /* --theme: #bd202e; */
   --theme: #000;
+  /* --theme: #bd202e; */
+
   --global-padding: 0 10vmin;
 }
 
@@ -70,7 +72,15 @@ body {
   z-index: 6;
 }
 
-/* S-logo */
+/* .
+.
+.
+.
+.
+.
+.
+S-logo */
+
 .logo-box {
   height: 7vh;
   width: 7vh;
@@ -86,7 +96,16 @@ body {
   width: 100%;
 }
 
-/* S-nav */
+/* 
+.
+.
+.
+.
+.
+.
+.
+S-nav */
+
 .nav-box {
   height: 100%;
 }
@@ -113,7 +132,7 @@ body {
 }
 
 .desktop-nav ul li a {
-  color: #555;
+  color: #000;
 }
 
 .mobile-nav {
@@ -138,7 +157,7 @@ body {
 }
 
 #site-search {
-  border: solid 1px #a5a4a4;
+  border: solid 1px #000;
 
   height: 50%;
   width: 50vmin;
@@ -398,21 +417,14 @@ S -Team */
 }
 
 .team-carousel-container {
-  padding: 0vmin 5vmin 5vmin 5vmin;
+  padding: 0vmin 5vmin;
   background: #fff;
 }
 
-.team-carousel-heading h6 {
-  font-size: 5vmin;
-}
-
-.team-carousel-heading {
-  padding: 5vmin 0;
-}
-
 .swiper-slide {
-  height: 55vmin;
+  height: 50vmin; /* 40vmin for imge & 10vmin for caption */
 }
+
 .slider-image {
   height: 40vmin;
 }
@@ -420,4 +432,7 @@ S -Team */
 .slider-caption {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  height: 10vmin;
 }

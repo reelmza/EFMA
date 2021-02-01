@@ -215,6 +215,54 @@ S-nav */
 .
 .
 .
+S - Box Model */
+
+.box-heading {
+  padding: 20vmin 10vmin 20vmin 10vmin;
+  background: #000;
+}
+
+.box-heading h6 {
+  color: #fff;
+  font-size: 10vmin;
+}
+
+.box-heading p {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #fff;
+}
+
+.box-heading img {
+  height: 13vmin;
+}
+
+.box-paragraph {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 3.5vmin;
+  text-align: justify;
+  padding: 10vmin 10vmin 5vmin 10vmin;
+  background: #fff;
+}
+
+.explain-box-heading {
+  background: #bd202e;
+}
+
+.explain-box-heading h6,
+.explain-box-heading p {
+  color: #fff;
+  text-align: center;
+}
+
+/* 
+.
+.
+.
+.
+.
+.
 S-hero */
 
 .hero {
@@ -299,7 +347,7 @@ S - Explain */
   flex-direction: column;
   align-items: center;
 
-  border-bottom: 1px solid #747474;
+  border-bottom: 1px dotted #000;
 }
 
 .explain-item-icon img {
@@ -316,7 +364,7 @@ S - Explain */
   font-family: "Roboto";
   font-weight: 300;
 
-  text-align: justify;
+  text-align: center;
   color: #3d3d3d;
 }
 
@@ -337,55 +385,6 @@ S - Explain */
   color: #fff;
   text-decoration: none;
   font-size: 5vmin;
-}
-
-/* 
-.
-.
-.
-.
-.
-.
-S - Box Model */
-
-.box-heading {
-  padding: 20vmin 10vmin 20vmin 10vmin;
-  background: #000;
-}
-
-.box-heading h6 {
-  color: #fff;
-  font-size: 10vmin;
-}
-
-.box-heading p {
-  font-family: "Roboto";
-  font-weight: 300;
-  color: #fff;
-}
-
-.box-heading img {
-  height: 13vmin;
-}
-
-.box-paragraph {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 3.5vmin;
-  text-align: justify;
-  padding: 10vmin 10vmin 5vmin 10vmin;
-  background: #fff;
-}
-
-.explain-box-heading {
-  background: #ececec;
-  color: #000;
-}
-
-.explain-box-heading h6,
-.explain-box-heading p {
-  color: #3a3a3a;
-  text-align: center;
 }
 
 /* .

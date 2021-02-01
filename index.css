@@ -305,6 +305,7 @@ S-hero */
 
 .hero-slider h1 {
   font-family: "Oswald";
+  /* text-align: center; */
   font-weight: 500;
   font-size: 15vmin;
   line-height: 1.2;
@@ -312,6 +313,11 @@ S-hero */
   color: #000;
   margin: 5vmin 10vmin 0 10vmin;
   padding-bottom: 5vmin;
+}
+
+.hero-slider p {
+  margin: 0 11vmin 5vmin 11vmin;
+  color: #444;
 }
 
 .hero-image {

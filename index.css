@@ -25,6 +25,15 @@ button {
   background-image: linear-gradient(to right, #d41c2e, #f82a3c);
 }
 
+.btn-grad1 {
+  background-image: linear-gradient(
+    to right,
+    #673ab7 0%,
+    #512da8 51%,
+    #673ab7 100%
+  );
+}
+
 * a {
   color: #000;
 }

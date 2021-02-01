@@ -300,7 +300,7 @@ S-hero */
   align-items: center;
   justify-content: center;
 
-  margin-top: -10vmin;
+  margin-top: -5vmin;
 }
 
 .hero-slider h1 {
@@ -318,8 +318,12 @@ S-hero */
 .hero-slider p {
   margin: 0 10vmin 5vmin 10vmin;
   color: #444;
+  font-weight: 300;
 }
 
+.social-buttons {
+  margin-top: 3vmin;
+}
 .hero-image {
   align-items: center;
   justify-content: center;

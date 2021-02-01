@@ -289,6 +289,8 @@ S-hero */
   display: flex;
   flex-direction: column;
   background: #fff6e3;
+
+  position: relative;
 }
 
 .hero-slider {
@@ -299,9 +301,6 @@ S-hero */
   justify-content: center;
 
   margin-top: -10vmin;
-  background: url("stars.svg") no-repeat;
-  background-size: 40vmin;
-  background-position: 65vw 15vh;
 }
 
 .hero-slider h1 {
@@ -339,6 +338,26 @@ S-hero */
 .hero-buttons a {
   color: #fff;
   font-size: 6vmin;
+}
+
+.hero .hero-svg {
+  position: absolute;
+  height: 20vmin;
+}
+
+.hero-svg1 {
+  bottom: 10vmin;
+  right: 0;
+}
+
+.hero-svg2 {
+  right: 20vw;
+  top: -5vh;
+}
+
+.hero-svg3 {
+  left: -10vw;
+  top: 20vh;
 }
 
 /* .

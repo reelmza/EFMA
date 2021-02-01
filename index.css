@@ -286,8 +286,6 @@ S-hero */
 
 .hero {
   height: 87vh;
-  position: relative;
-
   display: flex;
   flex-direction: column;
   background: #fff6e3;
@@ -299,6 +297,9 @@ S-hero */
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  margin-top: -10vmin;
+  background: rgb(240, 240, 240);
 }
 
 .hero-slider h1 {
@@ -412,14 +413,13 @@ S - Explain */
 S - Patner */
 
 .patners {
-  background: var(--theme);
   padding-bottom: 0;
 }
 
 .patners-logo {
   margin: 0;
   padding-top: 5vmin;
-  background: #fff;
+  background: #fff6e3;
 }
 
 .patners-logo-item {

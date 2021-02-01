@@ -69,8 +69,8 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+  /* background: #bd202e; */
+  /* border-bottom: 1px solid #ddd; */
 
   z-index: 6;
 }
@@ -297,14 +297,11 @@ S-hero */
 .hero-slider p {
   font-family: "Oswald";
   font-weight: 500;
-  font-size: 8vmin;
+  font-size: 15vmin;
   line-height: 1.4;
 
   color: #fff;
-  border-left: 1vmin solid #fff;
-
-  padding-left: 8vmin;
-  margin: 3vmin 13vmin;
+  margin: 0vmin 10vmin;
 }
 
 .hero-slider img {

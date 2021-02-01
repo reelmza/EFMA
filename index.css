@@ -348,6 +348,9 @@ S-hero */
 }
 
 .hero-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #bd202e;
   background-image: linear-gradient(
     to right,

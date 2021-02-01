@@ -69,8 +69,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+  background: #bd202e;
 
   z-index: 6;
 }
@@ -92,7 +91,7 @@ S-logo */
   align-items: center;
   justify-content: center;
 
-  background: #bd202e;
+  background: #fff;
 }
 
 .logo-box img {
@@ -335,7 +334,7 @@ S-hero */
 }
 .hero-paragraph-text p {
   font-size: 3vmin;
-
+  padding-top: 2vmin;
   color: #333;
 }
 

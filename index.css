@@ -280,10 +280,15 @@ S-hero */
   height: 87vh;
   background: #bd202e;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-slider {
-  height: 65vh;
+  /* height: 65vh; */
+  /* padding: 10vmin 0; */
   display: flex;
 
   flex-direction: column;

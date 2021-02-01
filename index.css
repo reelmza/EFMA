@@ -299,6 +299,9 @@ S-hero */
   justify-content: center;
 
   margin-top: -10vmin;
+  background: url("stars.svg") no-repeat;
+  background-size: 40vmin;
+  background-position: 65vw 15vh;
 }
 
 .hero-slider h1 {

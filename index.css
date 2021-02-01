@@ -339,25 +339,25 @@ S-hero */
   color: #fff;
   font-size: 6vmin;
 }
-
-.hero .hero-svg {
+.svg-wrapper {
   position: absolute;
+}
+.svg-wrapper .hero-svg {
   height: 20vmin;
 }
 
 .hero-svg1 {
-  bottom: 10vmin;
-  right: 0;
+  margin-top: 75vh;
 }
 
 .hero-svg2 {
-  right: 20vw;
-  top: -5vh;
+  margin-left: -20vw;
+  margin-top: -85vh;
 }
 
 .hero-svg3 {
-  left: -10vw;
-  top: 20vh;
+  margin-left: 45vw;
+  margin-top: -40vh;
 }
 
 /* .

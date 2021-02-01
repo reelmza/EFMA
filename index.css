@@ -83,7 +83,7 @@ body {
   justify-content: space-between;
 
   background: #fff;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgb(192, 192, 192);
 
   z-index: 6;
 }
@@ -296,6 +296,7 @@ S-hero */
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .hero-slider {
@@ -309,8 +310,8 @@ S-hero */
 .hero-slider h1 {
   font-family: "Oswald";
   font-weight: 500;
-  font-size: 14.5vmin;
-  line-height: 1.15;
+  font-size: 20vmin;
+  line-height: 1.2;
 
   color: #000;
   margin: 5vmin 10vmin 0 10vmin;
@@ -328,27 +329,6 @@ S-hero */
 
 .hero-image img {
   max-width: 80%;
-}
-
-.hero-paragraph {
-  width: 100%;
-  padding: 0 10vmin;
-  display: flex;
-}
-
-.hero-paragraph-text {
-  width: 50%;
-}
-.hero-paragraph-text h6 {
-  color: #000;
-  font-size: 5vmin;
-  margin-top: 5vmin;
-}
-.hero-paragraph-text p {
-  font-family: "Roboto";
-  font-size: 3vmin;
-  padding-top: 2vmin;
-  color: #000;
 }
 
 .hero-buttons {
@@ -409,7 +389,6 @@ S - Explain */
   font-family: "Roboto";
   font-weight: 300;
 
-  /* text-align: center; */
   color: #000;
 }
 

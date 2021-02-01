@@ -326,14 +326,12 @@ S-hero */
   justify-content: center;
   padding: 0vmin 8vmin;
   width: 100%;
-  height: 22vh;
 }
 
 .hero-buttons button {
   background: #fff;
 
-  height: 15vmin;
-  border-radius: 0px;
+  height: 18vmin;
 }
 
 /* .

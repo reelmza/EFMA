@@ -11,7 +11,7 @@
 
 .btn,
 button {
-  border-radius: 1vmin;
+  border-radius: 2vmin;
   margin: 0;
   padding: 0;
   border: none;
@@ -69,7 +69,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  background: #bd202e;
+  background: #fff;
   /* border-bottom: 1px solid #ddd; */
 
   z-index: 6;
@@ -296,14 +296,14 @@ S-hero */
 .hero-slider h1 {
   font-family: "Oswald";
   font-weight: 500;
-  font-size: 17vmin;
+  font-size: 15vmin;
   line-height: 1;
 
   color: #fff;
   margin: 5vmin 10vmin;
   padding-bottom: 5vmin;
 
-  border-bottom: 2vmin solid #fff;
+  border-bottom: 1vmin solid #fff;
 }
 
 .hero-slider img {
@@ -319,18 +319,31 @@ S-hero */
   max-width: 80%;
 }
 
+.hero-paragraph {
+  width: 100%;
+  padding: 0 10vmin;
+  display: flex;
+}
+
+.hero-paragraph-text {
+  width: 50%;
+}
+.hero-paragraph-text p {
+  padding: 3vmin 1vmin 5vmin 0;
+  color: #fff;
+}
+
 .hero-buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0vmin 8vmin;
+  padding: 0vmin 10vmin;
   width: 100%;
 }
 
 .hero-buttons button {
   background: #fff;
-
-  height: 18vmin;
+  height: 15vmin;
 }
 
 /* .

@@ -66,7 +66,7 @@ body {
   font-size: 5vmin;
 
   color: #000;
-  background: rgb(255, 255, 255);
+  background: #fff6e3;
   padding-top: 13vh;
 }
 
@@ -83,7 +83,7 @@ body {
   justify-content: space-between;
 
   background: #fff;
-  border-bottom: 1px solid rgb(192, 192, 192);
+  /* border-bottom: 1px solid rgb(192, 192, 192); */
 
   z-index: 6;
 }
@@ -262,7 +262,7 @@ S - Box Model */
 .explain-box-heading {
   padding: 30vmin 10vmin 35vmin 10vmin;
 
-  background: #000;
+  background: #cb2232;
   position: relative;
 }
 
@@ -295,12 +295,11 @@ S-hero */
 
   display: flex;
   flex-direction: column;
-  background: green;
+  background: #fff6e3;
 }
 
 .hero-slider {
-  height: 83vh;
-  background: rgb(255, 246, 227);
+  height: 87vh;
   display: flex;
   flex-direction: column;
   align-items: center;

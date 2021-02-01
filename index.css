@@ -283,12 +283,10 @@ S-hero */
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .hero-slider {
-  /* height: 65vh; */
-  /* padding: 10vmin 0; */
+  padding: 10vmin 0;
   display: flex;
 
   flex-direction: column;

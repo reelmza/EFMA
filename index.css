@@ -266,8 +266,8 @@ S - Box Model */
   color: #fff;
   text-align: center;
 }
-
-.explain-box-heading svg {
+.explain-box-heading svg,
+.staff-box-heading svg {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -347,7 +347,7 @@ S-hero */
 }
 
 .hero-svg1 {
-  margin-top: 75vh;
+  margin-top: 80vh;
 }
 
 .hero-svg2 {

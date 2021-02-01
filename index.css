@@ -296,12 +296,13 @@ S-hero */
 
 .hero-slider p {
   font-family: "Oswald";
+  text-align: justify;
   font-weight: 500;
-  color: #fff;
-  border-left: 1vmin solid #fff;
-
   font-size: 8vmin;
   line-height: 1.4;
+
+  color: #fff;
+  border-left: 1vmin solid #fff;
 
   padding-left: 8vmin;
   margin: 3vmin 13vmin;
@@ -369,6 +370,7 @@ S - Explain */
 .explain-item-heading {
   font-size: 6vmin;
   margin-bottom: 2vmin;
+  color: #bd202e;
 }
 
 .explain-item-text {

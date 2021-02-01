@@ -58,7 +58,7 @@ body {
 }
 
 .header {
-  height: 12vh;
+  height: 13vh;
   width: 100vw;
   padding: 0 11vmin;
 
@@ -293,7 +293,7 @@ S-hero */
   justify-content: center;
 }
 
-.hero-slider p {
+.hero-slider h1 {
   font-family: "Oswald";
   font-weight: 500;
   font-size: 17vmin;
@@ -301,6 +301,9 @@ S-hero */
 
   color: #fff;
   margin: 5vmin 10vmin;
+  padding-bottom: 5vmin;
+
+  border-bottom: 2vmin solid #fff;
 }
 
 .hero-slider img {

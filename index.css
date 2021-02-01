@@ -328,8 +328,15 @@ S-hero */
 .hero-paragraph-text {
   width: 50%;
 }
+.hero-paragraph-text h6 {
+  color: #fff;
+  font-size: 5vmin;
+  margin-top: 2vmin;
+}
 .hero-paragraph-text p {
-  padding: 3vmin 10vmin 0vmin 0;
+  padding: 1vmin 3vmin 0vmin 0;
+  font-size: 3vmin;
+
   color: #fff;
 }
 

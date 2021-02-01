@@ -26,12 +26,7 @@ button {
 }
 
 .btn-grad1 {
-  background-image: linear-gradient(
-    to right,
-    #673ab7 0%,
-    #512da8 51%,
-    #673ab7 100%
-  );
+  background: #000;
 }
 
 * a {
@@ -325,9 +320,11 @@ S-hero */
 }
 
 .hero-slider p {
+  font-family: "Roboto";
   margin: 0 10vmin 5vmin 10vmin;
   color: #444;
   font-weight: 300;
+  line-height: 1;
 }
 
 .social-buttons {

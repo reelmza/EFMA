@@ -286,7 +286,6 @@ S-hero */
 }
 
 .hero-slider {
-  padding: 10vmin 0;
   display: flex;
 
   flex-direction: column;
@@ -297,11 +296,11 @@ S-hero */
 .hero-slider p {
   font-family: "Oswald";
   font-weight: 500;
-  font-size: 15vmin;
+  font-size: 17vmin;
   line-height: 1;
 
   color: #fff;
-  margin: 0vmin 10vmin;
+  margin: 5vmin 10vmin;
 }
 
 .hero-slider img {

@@ -339,7 +339,7 @@ S-hero */
   width: 50%;
 }
 .hero-paragraph-text h6 {
-  color: #333;
+  color: #222;
   font-size: 5vmin;
   margin-top: 5vmin;
 }
@@ -347,7 +347,7 @@ S-hero */
   font-family: "Roboto";
   font-size: 3vmin;
   padding-top: 2vmin;
-  color: #333;
+  color: #222;
 }
 
 .hero-buttons {
@@ -360,6 +360,7 @@ S-hero */
 
 .hero-buttons button {
   height: 15vmin;
+  background: #222;
 }
 
 .hero-buttons a {

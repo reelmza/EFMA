@@ -92,7 +92,7 @@ S-logo */
   align-items: center;
   justify-content: center;
 
-  background: var(--theme);
+  background: #bd202e;
 }
 
 .logo-box img {
@@ -247,7 +247,7 @@ S - Box Model */
 }
 
 .explain-box-heading {
-  background: #bd202e;
+  background: #000;
 }
 
 .explain-box-heading h6,
@@ -267,7 +267,7 @@ S-hero */
 
 .hero {
   height: 87vh;
-  background: var(--theme);
+  background: #bd202e;
   position: relative;
 }
 
@@ -347,7 +347,7 @@ S - Explain */
   flex-direction: column;
   align-items: center;
 
-  border-bottom: 1px dotted #000;
+  /* border-bottom: 1px dotted #000; */
 }
 
 .explain-item-icon img {

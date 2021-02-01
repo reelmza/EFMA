@@ -291,12 +291,10 @@ S-hero */
 
 .hero {
   height: 87vh;
-  /* background: #bd202e; */
   position: relative;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .hero-slider {
@@ -340,7 +338,7 @@ S-hero */
 }
 
 .hero-buttons button {
-  height: 15vmin;
+  height: 20vmin;
 }
 
 .hero-buttons a {

@@ -82,7 +82,8 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  background: #bd202e;
+  background: #fff;
+  border-bottom: 1px solid #000;
 
   z-index: 6;
 }
@@ -104,7 +105,7 @@ S-logo */
   align-items: center;
   justify-content: center;
 
-  background: #fff;
+  background: #000;
 }
 
 .logo-box img {
@@ -311,7 +312,7 @@ S-hero */
   font-size: 14.5vmin;
   line-height: 1.15;
 
-  color: #333;
+  color: #000;
   margin: 5vmin 10vmin 0 10vmin;
   padding-bottom: 5vmin;
 }
@@ -339,7 +340,7 @@ S-hero */
   width: 50%;
 }
 .hero-paragraph-text h6 {
-  color: #222;
+  color: #000;
   font-size: 5vmin;
   margin-top: 5vmin;
 }
@@ -347,7 +348,7 @@ S-hero */
   font-family: "Roboto";
   font-size: 3vmin;
   padding-top: 2vmin;
-  color: #222;
+  color: #000;
 }
 
 .hero-buttons {
@@ -360,7 +361,6 @@ S-hero */
 
 .hero-buttons button {
   height: 15vmin;
-  background: #222;
 }
 
 .hero-buttons a {
@@ -410,7 +410,7 @@ S - Explain */
   font-weight: 300;
 
   /* text-align: center; */
-  color: #3d3d3d;
+  color: #000;
 }
 
 .explain-button {

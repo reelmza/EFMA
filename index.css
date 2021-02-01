@@ -298,11 +298,11 @@ S-hero */
   font-size: 15vmin;
   line-height: 1;
 
-  color: #bd202e;
-  margin: 10vmin 10vmin 0 10vmin;
+  color: #333;
+  margin: 10vmin 10vmin 10vmin 10vmin;
   padding-bottom: 10vmin;
 
-  /* border-bottom: 1px solid #fff; */
+  border-bottom: 1px solid #333;
 }
 
 .hero-slider img {

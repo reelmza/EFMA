@@ -295,11 +295,13 @@ S-hero */
 
   display: flex;
   flex-direction: column;
+  background: green;
 }
 
 .hero-slider {
+  height: 87vh;
+  background: rgb(255, 246, 227);
   display: flex;
-
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -309,7 +311,7 @@ S-hero */
   font-family: "Oswald";
   font-weight: 500;
   font-size: 20vmin;
-  line-height: 1.2;
+  line-height: 1;
 
   color: #000;
   margin: 5vmin 10vmin 0 10vmin;

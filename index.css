@@ -33,6 +33,9 @@ button {
   color: #000;
 }
 
+a {
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -54,6 +57,8 @@ h6 {
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -304,12 +309,11 @@ S-hero */
   align-items: center;
   justify-content: center;
 
-  margin-top: -5vmin;
+  margin-top: -10vmin;
 }
 
 .hero-slider h1 {
   font-family: "Oswald";
-  /* text-align: center; */
   font-weight: 500;
   font-size: 15vmin;
   line-height: 1.2;
@@ -327,9 +331,6 @@ S-hero */
   line-height: 1;
 }
 
-.social-buttons {
-  margin-top: 3vmin;
-}
 .hero-image {
   align-items: center;
   justify-content: center;
@@ -355,28 +356,37 @@ S-hero */
   color: #fff;
   font-size: 6vmin;
 }
+
 .svg-wrapper {
   position: absolute;
+  height: 87vh;
+  margin: 0 -5vmin;
 }
-.svg-wrapper .hero-svg {
+
+.svg-wrapper div {
+  position: absolute;
+}
+
+.star-svg {
+  top: 58vmin;
+  right: 40vmin;
+  height: 8vmin;
+}
+
+.rocket-svg {
+  top: -5vmin;
   height: 20vmin;
 }
 
-.hero-svg1 {
-  margin-top: 72vh;
-  height: 10vmin;
+.ball-svg {
+  right: 5vmin;
+  top: 5vmin;
+  height: 20vmin;
 }
 
-.hero-svg2 {
-  margin-left: -20vw;
-  margin-top: -85vh;
+.svg-wrapper svg {
+  height: 100%;
 }
-
-.hero-svg3 {
-  margin-left: 45vw;
-  margin-top: -70vh;
-}
-
 /* .
 .
 .
@@ -515,4 +525,32 @@ S -Team & S - staff*/
   align-items: center;
 
   height: 10vmin;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-slider h1 {
+    font-weight: 500;
+    font-size: 13vmin;
+    line-height: 1.2;
+
+    color: #000;
+    margin: 5vmin 10vmin 0 10vmin;
+    padding-bottom: 5vmin;
+  }
+
+  .hero-slider {
+    margin-top: 0vmin;
+  }
+
+  .social-buttons {
+    display: none;
+  }
+
+  .hero-svg1 {
+    margin-top: 90vh;
+  }
+
+  .hero-svg2 {
+    margin-top: -140vmin;
+  }
 }

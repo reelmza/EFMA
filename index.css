@@ -52,7 +52,6 @@ h6 {
 
   --global-padding: 0 10vmin;
   --animate-duration: 1000ms;
-  /* --animate-delay: 10s; */
 }
 
 html {
@@ -141,6 +140,7 @@ S-nav */
   align-items: center;
 
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -152,6 +152,7 @@ S-nav */
 
 .desktop-nav ul li a {
   color: #000;
+  font-size: 3.5vmin;
 }
 
 .mobile-nav {
@@ -349,7 +350,7 @@ S-hero */
 }
 
 .hero-buttons button {
-  height: 15vmin;
+  height: 18vmin;
 }
 
 .hero-buttons a {
@@ -368,14 +369,14 @@ S-hero */
 }
 
 .star-svg {
-  top: 58vmin;
-  right: 40vmin;
+  top: 53vmin;
+  right: 45vmin;
   height: 8vmin;
 }
 
 .rocket-svg {
   top: -7vmin;
-  left: 8vmin;
+  left: 5vmin;
   height: 20vmin;
 }
 
@@ -528,30 +529,44 @@ S -Team & S - staff*/
   height: 10vmin;
 }
 
+/* Pads & Small laptops*/
 @media only screen and (min-width: 768px) {
   .hero-slider h1 {
-    font-weight: 500;
-    font-size: 13vmin;
-    line-height: 1.2;
-
-    color: #000;
+    font-size: 12.5vmin;
     margin: 5vmin 10vmin 0 10vmin;
-    padding-bottom: 5vmin;
+    padding-bottom: 0vmin;
+  }
+
+  .hero-slider p {
+    margin: 1vmin 10vmin 2vmin 10vmin;
   }
 
   .hero-slider {
     margin-top: 0vmin;
   }
 
-  .social-buttons {
+  .rocket-svg {
+    top: -10vmin;
+    left: 9vmin;
+  }
+
+  .star-svg {
+    top: 33vh;
+    left: 53vmin;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .svg-wrapper {
     display: none;
   }
+}
 
-  .hero-svg1 {
-    margin-top: 90vh;
-  }
-
-  .hero-svg2 {
-    margin-top: -140vmin;
+/* Big Laptops */
+@media only screen and (min-width: 1200px) {
+  .hero-slider h1,
+  .hero-slider p {
+    width: 100%;
+    padding: 0 10vmin;
   }
 }

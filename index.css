@@ -171,6 +171,7 @@ S-nav */
 .search-icon {
   margin-right: 8vmin;
   transition: 0.3s;
+  margin-top: 1.2vh;
 }
 
 #site-search {
@@ -261,7 +262,6 @@ S - Box Model */
   font-size: 3.5vmin;
   text-align: center;
   padding: 0vmin 10vmin 0vmin 10vmin;
-  background: #fff;
 }
 
 .explain-box-heading,
@@ -507,14 +507,13 @@ S -Team & S - staff*/
 
 .team,
 .staff {
-  background: var(--theme);
+  background: #fff6e3;
   padding-bottom: 0;
 }
 
 .team-carousel-container,
 .staff-carousel-container {
   padding: 0vmin 5vmin;
-  background: #fff;
   padding-top: 10vmin;
 }
 

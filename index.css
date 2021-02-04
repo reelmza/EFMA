@@ -244,6 +244,7 @@ S - Box Model */
 
 .box-heading h6 {
   font-family: "Bitter";
+  font-weight: 700;
   color: #fff;
   font-size: 10vmin;
 }
@@ -251,6 +252,7 @@ S - Box Model */
 .box-heading p {
   font-family: "Roboto";
   font-weight: 300;
+  line-height: 1.1;
   color: #fff;
 }
 

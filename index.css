@@ -1,6 +1,6 @@
 /* Theme Dark #c10024 */
 /* Theme Bright #ff0030 */
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
 
 *,
 *::before,
@@ -243,6 +243,7 @@ S - Box Model */
 }
 
 .box-heading h6 {
+  font-family: "Bitter";
   color: #fff;
   font-size: 10vmin;
 }
@@ -314,7 +315,7 @@ S-hero */
 
 .hero-slider h1 {
   font-family: "Bitter";
-  font-weight: 500;
+  font-weight: 800;
   font-size: 15vmin;
   line-height: 1.2;
 
@@ -323,7 +324,8 @@ S-hero */
 }
 
 .hero-slider p {
-  font-family: "Roboto";
+  font-family: "Bitter";
+  font-style: italic;
   margin: 1vmin 10vmin 0vmin 10vmin;
   color: #444;
   font-weight: 300;
@@ -356,6 +358,8 @@ S-hero */
 }
 
 .hero-buttons a {
+  font-family: "Bitter";
+  font-weight: 800;
   color: #000;
   font-size: 6vmin;
 }

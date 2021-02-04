@@ -1,5 +1,6 @@
 /* Theme Dark #c10024 */
 /* Theme Bright #ff0030 */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@800&display=swap");
 
 *,
 *::before,
@@ -312,7 +313,7 @@ S-hero */
 }
 
 .hero-slider h1 {
-  font-family: "Oswald";
+  font-family: "Bitter";
   font-weight: 500;
   font-size: 15vmin;
   line-height: 1.2;

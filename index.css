@@ -14,15 +14,12 @@ button {
   border-radius: 1vmin;
   margin: 0;
   padding: 0;
-  border: none;
+  border: solid 1vmin #000;
   background: none;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: #bd202e;
-  background-image: linear-gradient(to right, #d41c2e, #f82a3c);
 }
 
 .btn-grad1 {
@@ -325,7 +322,7 @@ S-hero */
 
 .hero-slider p {
   font-family: "Roboto";
-  margin: 0vmin 10vmin 0vmin 10vmin;
+  margin: 1vmin 10vmin 0vmin 10vmin;
   color: #444;
   font-weight: 300;
   line-height: 1;
@@ -344,7 +341,7 @@ S-hero */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0vmin 10vmin;
+  padding: 5vmin 10vmin;
   width: 100%;
 }
 
@@ -353,8 +350,12 @@ S-hero */
 }
 
 .hero-buttons a {
-  color: #fff;
+  color: #000;
   font-size: 6vmin;
+}
+
+.btn-grad1 a {
+  color: #fff;
 }
 
 .svg-wrapper {

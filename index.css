@@ -320,13 +320,12 @@ S-hero */
   line-height: 1.2;
 
   color: #000;
-  margin: 5vmin 10vmin 0 10vmin;
-  padding-bottom: 5vmin;
+  margin: 0vmin 10vmin 0 10vmin;
 }
 
 .hero-slider p {
   font-family: "Roboto";
-  margin: 5vmin 10vmin 10vmin 10vmin;
+  margin: 0vmin 10vmin 0vmin 10vmin;
   color: #444;
   font-weight: 300;
   line-height: 1;
@@ -537,6 +536,13 @@ S -Team & S - staff*/
     padding-bottom: 0vmin;
   }
 
+  .hero-buttons button {
+    height: 10vmin;
+  }
+  .hero-buttons button a {
+    font-size: 3.5vmin;
+  }
+
   .hero-slider p {
     margin: 1vmin 10vmin 2vmin 10vmin;
   }
@@ -556,17 +562,41 @@ S -Team & S - staff*/
   }
 }
 
+/* Small Laptops */
 @media only screen and (min-width: 1024px) {
   .svg-wrapper {
     display: none;
   }
 }
 
-/* Big Laptops */
+/* 15' Laptops */
 @media only screen and (min-width: 1200px) {
   .hero-slider h1,
   .hero-slider p {
     width: 100%;
-    padding: 0 10vmin;
+  }
+
+  .hero-image {
+    display: flex;
+    align-items: center;
+
+    background: #000;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+
+  .hero-slider h1 {
+    margin-right: 1.5vmin;
+  }
+
+  .hero-slider p {
+    margin-right: 1.5vmin;
+    /* background: #000; */
   }
 }

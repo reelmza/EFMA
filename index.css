@@ -304,7 +304,7 @@ S-hero */
   height: 87vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   margin-top: -5vmin;
@@ -321,7 +321,7 @@ S-hero */
 }
 
 .hero-slider p {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   margin: 1vmin 10vmin 0vmin 10vmin;
   color: #444;
   font-weight: 300;
@@ -331,6 +331,10 @@ S-hero */
 .hero-image {
   align-items: center;
   justify-content: center;
+}
+
+.small-laptop-image {
+  display: none;
 }
 
 .hero-image img {
@@ -350,7 +354,6 @@ S-hero */
 }
 
 .hero-buttons a {
-  font-family: "Montserrat";
   color: #000;
   font-size: 6vmin;
 }
@@ -515,7 +518,7 @@ S -Team & S - staff*/
 }
 
 .swiper-slide {
-  height: 55vmin; /* 40vmin for imge, 10vmin for caption, 5 for carousel dots */
+  height: 55vmin; /* 40vmin for image, 10vmin for caption, 5 for carousel dots */
 }
 
 .slider-image {
@@ -539,10 +542,10 @@ S -Team & S - staff*/
   }
 
   .hero-buttons button {
-    height: 10vmin;
+    height: 15vmin;
   }
   .hero-buttons button a {
-    font-size: 3.5vmin;
+    font-size: 3.8vmin;
   }
 
   .hero-slider p {
@@ -565,17 +568,65 @@ S -Team & S - staff*/
 }
 
 /* Small Laptops */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .svg-wrapper {
     display: none;
+  }
+
+  .hero-slider h1,
+  .hero-slider p {
+    width: 100%;
+    padding: 0 10vmin;
+    padding-right: 40vw;
+    margin: 0;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .small-laptop-image {
+    display: block;
+    position: absolute;
+
+    right: 0;
+    height: 100%;
+    padding: 0 10vmin;
+    width: fit-content;
+    background: #000;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .small-laptop-image img {
+    width: 40vmin;
+  }
+
+  .hero-buttons button {
+    padding: 0 10vmin;
+  }
+
+  .hero-slider h1 {
+    margin-right: 1.5vmin;
   }
 }
 
 /* 15' Laptops */
 @media only screen and (min-width: 1200px) {
+  .small-laptop-image {
+    display: none;
+  }
   .hero-slider h1,
   .hero-slider p {
-    width: 100%;
+    padding: 0 10vmin;
+    padding-right: 10vw;
+  }
+
+  .hero-slider p {
+    margin-right: 1.5vmin;
+    /* background: #000; */
   }
 
   .hero-image {
@@ -586,19 +637,10 @@ S -Team & S - staff*/
   }
 
   .hero-image img {
-    width: 100%;
+    width: 60%;
   }
 
-  .hero-buttons {
-    flex-direction: row;
-  }
-
-  .hero-slider h1 {
-    margin-right: 1.5vmin;
-  }
-
-  .hero-slider p {
-    margin-right: 1.5vmin;
-    /* background: #000; */
+  .explain-text-last {
+    padding: 0 20vw;
   }
 }

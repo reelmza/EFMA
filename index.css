@@ -34,6 +34,7 @@ button:focus {
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -81,8 +82,6 @@ body {
   justify-content: space-between;
 
   background: #fff;
-  /* border-bottom: 1px solid rgb(192, 192, 192); */
-
   z-index: 6;
 }
 
@@ -141,8 +140,8 @@ S-nav */
 }
 
 .desktop-nav ul li {
-  list-style-type: none;
   margin-right: 2vmin;
+  list-style-type: none;
   text-transform: uppercase;
 }
 
@@ -261,11 +260,11 @@ S - Box Model */
 }
 
 .box-paragraph {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 3.5vmin;
-  text-align: center;
-  padding: 0vmin 10vmin 0vmin 10vmin;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .explain-box-heading,
@@ -450,18 +449,19 @@ S - Explain */
   padding: 0 5vmin;
 }
 
-.explain-button {
-  min-width: 45vmin;
+.section-button {
+  min-width: 60vmin;
   padding: 0 5vmin;
   height: 15vmin;
 }
 
-.explain-button:hover {
+.section-button:hover {
   background: #000;
   border: none;
 }
 
-.explain-button a {
+.section-button a {
+  font-family: "Bitter";
   color: #000;
   font-weight: 700;
   font-size: 5vmin;
@@ -526,7 +526,7 @@ S -Team & S - staff*/
 }
 
 .swiper-slide {
-  height: 55vmin; /* 40vmin for image, 10vmin for caption, 5 for carousel dots */
+  height: 60vmin; /* 40vmin for image, 10vmin for caption, 5 for carousel dots */
 }
 
 .slider-image {
@@ -538,7 +538,14 @@ S -Team & S - staff*/
   justify-content: center;
   align-items: center;
 
-  height: 10vmin;
+  height: 15vmin;
+}
+
+.slider-caption p {
+  font-family: "Roboto";
+  /* line-height: 1; */
+  font-size: 3.5vmin;
+  text-align: center;
 }
 
 /* Pads & Small laptops*/

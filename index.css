@@ -321,7 +321,7 @@ S-hero */
 }
 
 .hero-slider p {
-  font-family: "Roboto";
+  font-family: "Montserrat";
   margin: 1vmin 10vmin 0vmin 10vmin;
   color: #444;
   font-weight: 300;
@@ -350,6 +350,7 @@ S-hero */
 }
 
 .hero-buttons a {
+  font-family: "Montserrat";
   color: #000;
   font-size: 6vmin;
 }

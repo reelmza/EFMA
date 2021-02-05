@@ -27,6 +27,10 @@ button:focus {
   background: #000;
 }
 
+li {
+  list-style-type: none;
+}
+
 * a {
   color: #000;
 }
@@ -253,12 +257,29 @@ S - Box Model */
   font-weight: 300;
   line-height: 1.1;
   color: #fff;
+  margin-bottom: 0.5vmin;
 }
 
-.box-heading img {
-  height: 13vmin;
+.box-heading ul {
+  padding-right: 5vmin;
 }
 
+.box-heading ul li {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.box-heading ul li p {
+  margin-left: 3vmin;
+}
+
+.box-heading strong {
+  font-size: 6vmin;
+}
 .box-paragraph {
   width: 100%;
 
@@ -310,14 +331,12 @@ S-hero */
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-
-  margin-top: -5vmin;
 }
 
 .hero-slider h1 {
   font-family: "Bitter";
   font-weight: 800;
-  font-size: 15vmin;
+  font-size: 14vmin;
   line-height: 1.2;
 
   color: #000;
@@ -379,22 +398,10 @@ S-hero */
   position: absolute;
 }
 
-.star-svg {
-  top: 53vmin;
-  right: 45vmin;
-  height: 8vmin;
-}
-
 .rocket-svg {
-  top: -7vmin;
-  left: 5vmin;
-  height: 20vmin;
-}
-
-.ball-svg {
+  top: -13vmin;
   right: 5vmin;
-  top: 5vmin;
-  height: 20vmin;
+  height: 30vmin;
 }
 
 .svg-wrapper svg {
@@ -522,15 +529,15 @@ S -Team & S - staff*/
 .team-carousel-container,
 .staff-carousel-container {
   padding: 0vmin 5vmin;
-  padding-top: 10vmin;
+  padding-top: 5vmin;
 }
 
 .swiper-slide {
-  height: 60vmin; /* 40vmin for image, 10vmin for caption, 5 for carousel dots */
+  height: 75vmin; /* 55vmin for image, 10vmin for caption, 5 for carousel dots */
 }
 
 .slider-image {
-  height: 40vmin;
+  height: 55vmin;
 }
 
 .slider-caption {
@@ -551,7 +558,7 @@ S -Team & S - staff*/
 /* Pads & Small laptops*/
 @media only screen and (min-width: 768px) {
   .hero-slider h1 {
-    font-size: 12.5vmin;
+    font-size: 11.5vmin;
     margin: 5vmin 10vmin 0 10vmin;
     padding-bottom: 0vmin;
   }
@@ -572,13 +579,13 @@ S -Team & S - staff*/
   }
 
   .rocket-svg {
-    top: -10vmin;
-    left: 9vmin;
+    top: 20vmin;
+    right: -3vmin;
   }
 
-  .star-svg {
-    top: 33vh;
-    left: 53vmin;
+  .explain-box-heading svg,
+  .staff-box-heading svg {
+    display: none !important;
   }
 }
 
@@ -629,11 +636,6 @@ S -Team & S - staff*/
 
   .explain-item-text {
     padding: 0 20vw;
-  }
-
-  .explain-box-heading svg,
-  .staff-box-heading svg {
-    display: none !important;
   }
 
   .box-heading {

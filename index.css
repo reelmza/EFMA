@@ -269,13 +269,6 @@ S - Box Model */
   align-items: flex-start;
 }
 
-.box-heading ul li p {
-  margin-left: 3vmin;
-}
-
-.box-heading strong {
-  font-size: 6vmin;
-}
 .box-paragraph {
   width: 100%;
 
@@ -378,7 +371,11 @@ S-hero */
   color: #000;
   font-size: 6vmin;
 }
-
+.hero h1 em {
+  color: #cb2232;
+  width: unset;
+  font-style: normal;
+}
 .btn-grad1 {
   background: #cb2232;
   border: none;

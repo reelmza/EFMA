@@ -320,7 +320,7 @@ S-hero */
   height: 87vh;
   display: flex;
   flex-direction: column;
-  background: #fff1d3;
+  background: rgb(255, 255, 255);
 
   position: relative;
 }
@@ -345,7 +345,6 @@ S-hero */
 
 .hero-slider p {
   font-family: "Bitter";
-  font-style: italic;
   margin: 1vmin 10vmin 0vmin 10vmin;
   color: #444;
   font-weight: 300;

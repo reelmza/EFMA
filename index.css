@@ -625,11 +625,11 @@ S -Team & S - staff*/
 
 .contact-form input,
 .contact-form textarea {
-  font-size: 3vmin;
+  font-size: 4vmin;
 
   width: 100%;
   margin-bottom: 3vmin;
-  padding: 3vmin;
+  padding: 5vmin 3vmin;
 }
 
 .contact-form textarea {
@@ -637,7 +637,7 @@ S -Team & S - staff*/
 }
 
 .contact-form button {
-  padding: 3vmin 15vmin;
+  padding: 4.5vmin 20vmin;
   font-size: 4vmin;
   background: var(--theme);
   color: #fff;

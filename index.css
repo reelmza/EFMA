@@ -647,11 +647,13 @@ S -Team & S - staff*/
 .contact-form-title {
   font-size: 4vmin;
   margin-bottom: 1vmin;
+  text-align: center;
 }
 
 .contact-form-text {
   font-size: 3vmin;
   font-weight: 200;
+  text-align: center;
 }
 /* Pads & Small laptops*/
 @media only screen and (min-width: 768px) {
@@ -743,6 +745,10 @@ S -Team & S - staff*/
   .team-carousel-container,
   .staff-carousel-container {
     padding: 5vmin 20vmin;
+  }
+  .contact-form-title,
+  .contact-form-text {
+    text-align: left;
   }
 }
 

@@ -542,15 +542,15 @@ S -Team & S - staff*/
 
 .swiper-scrollbar {
   background: none;
-  top: 45vmin;
+  top: 50vmin;
 }
 .swiper-scrollbar-drag {
-  background: #fff;
+  background: var(--background);
   border-radius: 0px;
 }
 
 .slider-image {
-  height: 50vmin;
+  height: 55vmin;
 }
 
 .slider-caption {
@@ -566,7 +566,7 @@ S -Team & S - staff*/
 .slider-caption p {
   font-family: "Roboto";
   color: #fff;
-  font-size: 3vmin;
+  font-size: 4vmin;
 }
 
 /* Staff */

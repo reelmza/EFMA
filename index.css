@@ -465,13 +465,13 @@ S - Explain */
 }
 
 .section-button:hover {
-  background: #000;
+  background: var(--theme);
+  color: var(--background);
   border: none;
 }
 
 .section-button a {
   font-family: "Bitter";
-  color: #000;
   font-weight: 700;
   font-size: 5vmin;
 }
@@ -489,12 +489,14 @@ S - Patner */
   padding-bottom: 0;
 }
 
-.patners-logo {
+.patners-logo,
+.staff-picture {
   padding: 20vh 10vmin;
   background: var(--background);
 }
 
-.patners-logo-item {
+.patners-logo-item,
+.staff-picture-item {
   display: flex;
 
   flex-direction: column;
@@ -508,9 +510,30 @@ S - Patner */
   width: 30%;
 }
 
+.staff-picture-item img {
+  width: 60%;
+  padding: 5vmin;
+  background: var(--theme);
+  border-radius: 50%;
+}
+
 .patners-logo-item h6 {
   font-size: 6vmin;
   color: var(--foreground);
+}
+
+.staff-picture-item h6 {
+  font-size: 6vmin;
+  text-align: center;
+  margin-top: 3vmin;
+  line-height: 0.9;
+}
+
+.staff-picture-item p {
+  font-size: 4vmin;
+  text-align: center;
+  margin-top: 3vmin;
+  line-height: 0.9;
 }
 
 /* .

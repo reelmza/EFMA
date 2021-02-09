@@ -648,6 +648,11 @@ S -Team & S - staff*/
   font-size: 4vmin;
   margin-bottom: 1vmin;
 }
+
+.contact-form-text {
+  font-size: 3vmin;
+  font-weight: 200;
+}
 /* Pads & Small laptops*/
 @media only screen and (min-width: 768px) {
   .hero-slider h1 {

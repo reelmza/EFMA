@@ -36,18 +36,22 @@ searchBtn.addEventListener('click', function () {
 
 var swiper = new Swiper('.swiper-container', {
     init: true,
-    loop: true,
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: true
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+        dragSize: 50,
     },
-
-
-    speed: 500,
-    spaceBetween: 100,
-
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets'
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
     }
+    // loop: true,
+    // autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: true
+    // },
+
+
+    // speed: 500,
+    // spaceBetween: 100,
 })

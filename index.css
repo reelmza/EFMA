@@ -528,10 +528,9 @@ S -Team & S - staff*/
   padding-bottom: 0;
 }
 
-.team-carousel-container,
-.staff-carousel-container {
-  padding: 0vmin 5vmin;
-  padding-top: 5vmin;
+.team-carousel-container {
+  padding: 0vmin 0vmin;
+  padding-top: 8vmin;
 }
 
 .swiper-slide {

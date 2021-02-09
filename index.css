@@ -510,30 +510,9 @@ S - Patner */
   width: 30%;
 }
 
-.staff-picture-item img {
-  width: 60%;
-  padding: 5vmin;
-  background: var(--theme);
-  border-radius: 50%;
-}
-
 .patners-logo-item h6 {
   font-size: 6vmin;
   color: var(--foreground);
-}
-
-.staff-picture-item h6 {
-  font-size: 6vmin;
-  text-align: center;
-  margin-top: 3vmin;
-  line-height: 0.9;
-}
-
-.staff-picture-item p {
-  font-size: 4vmin;
-  text-align: center;
-  margin-top: 3vmin;
-  line-height: 0.9;
 }
 
 /* .
@@ -587,6 +566,42 @@ S -Team & S - staff*/
   font-family: "Roboto";
   color: #fff;
   font-size: 3vmin;
+}
+
+/* Staff */
+.staff-picture {
+  padding: 10vmin;
+}
+.staff-picture-item img {
+  width: 60%;
+  padding: 5vmin;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.staff-picture-item h6 {
+  font-size: 6vmin;
+  text-align: center;
+  margin-top: 3vmin;
+  line-height: 0.9;
+}
+
+.staff-picture-item p {
+  font-size: 4vmin;
+  text-align: center;
+  margin-top: 3vmin;
+  line-height: 0.9;
+}
+
+.staff-box-heading {
+  background: none;
+  min-height: 20vmin;
+  padding-top: 10vmin;
+}
+
+.staff-box-heading p,
+.staff-box-heading h6 {
+  color: var(--foreground);
 }
 
 /* Pads & Small laptops*/

@@ -325,11 +325,11 @@ S-hero */
 .hero-slider h1 {
   font-family: "Bitter";
   font-weight: 800;
-  font-size: 14vmin;
+  font-size: 11vmin;
   line-height: 1.2;
 
   color: #000;
-  margin: 0vmin 10vmin 0 10vmin;
+  margin: 0vmin 10vmin 5vmin 10vmin;
 }
 
 .hero-slider p {

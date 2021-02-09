@@ -534,7 +534,11 @@ S -Team & S - staff*/
 }
 
 .swiper-slide {
-  height: 75vmin; /* 55vmin for image, 10vmin for caption, 5 for carousel dots */
+  height: 68vmin; /* 55vmin for image, 10vmin for caption, 5 for carousel dots */
+}
+
+.swiper-scrollbar {
+  background: none;
 }
 
 .slider-image {

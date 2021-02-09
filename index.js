@@ -39,7 +39,7 @@ var swiper = new Swiper('.swiper-container', {
     scrollbar: {
         el: ".swiper-scrollbar",
         draggable: true,
-        dragSize: 50,
+        dragSize: 10,
     },
     navigation: {
         nextEl: ".swiper-button-next",

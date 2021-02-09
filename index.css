@@ -575,7 +575,7 @@ S -Team & S - staff*/
 .staff-picture-item img {
   width: 60%;
   padding: 5vmin;
-  background: #ccc;
+  background: rgb(247, 247, 247);
   border-radius: 50%;
 }
 

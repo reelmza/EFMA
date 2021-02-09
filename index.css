@@ -335,10 +335,10 @@ S-hero */
 }
 
 .hero-slider p {
-  font-family: "Bitter";
-  margin: 10vmin 10vmin 5vmin 10vmin;
-  color: #444;
-  font-weight: 300;
+  font-family: "Roboto";
+  margin: 7vmin 10vmin 7vmin 10vmin;
+  color: #505050;
+  font-weight: 200;
   line-height: 1;
 }
 

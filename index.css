@@ -319,22 +319,24 @@ S-hero */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
+
+  padding-top: 10vmin;
 }
 
 .hero-slider h1 {
   font-family: "Bitter";
   font-weight: 800;
-  font-size: 11vmin;
+  font-size: 10vmin;
   line-height: 1.2;
 
   color: #000;
-  margin: 0vmin 10vmin 5vmin 10vmin;
+  margin: 0vmin 10vmin 0 10vmin;
 }
 
 .hero-slider p {
   font-family: "Bitter";
-  margin: 1vmin 10vmin 0vmin 10vmin;
+  margin: 10vmin 10vmin 5vmin 10vmin;
   color: #444;
   font-weight: 300;
   line-height: 1;
@@ -357,7 +359,7 @@ S-hero */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5vmin 10vmin;
+  padding: 0 10vmin;
   width: 100%;
 }
 

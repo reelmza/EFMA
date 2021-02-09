@@ -529,35 +529,41 @@ S -Team & S - staff*/
 }
 
 .team-carousel-container {
-  padding: 0vmin 0vmin;
-  padding-top: 8vmin;
+  padding: 0vmin 5vmin;
+  padding-top: 5vmin;
 }
 
 .swiper-slide {
-  height: 68vmin; /* 55vmin for image, 10vmin for caption, 5 for carousel dots */
+  height: 55vmin; /* 55vmin for image, 5vmin for padding below */
 }
 
 .swiper-scrollbar {
   background: none;
+  top: 45vmin;
+}
+.swiper-scrollbar-drag {
+  background: #fff;
+  border-radius: 0px;
 }
 
 .slider-image {
-  height: 55vmin;
+  height: 50vmin;
 }
 
 .slider-caption {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   height: 15vmin;
+  padding: 0 10vmin;
+  margin-top: -48vmin;
 }
 
 .slider-caption p {
   font-family: "Roboto";
-  /* line-height: 1; */
-  font-size: 3.5vmin;
-  text-align: center;
+  color: #fff;
+  font-size: 3vmin;
 }
 
 /* Pads & Small laptops*/

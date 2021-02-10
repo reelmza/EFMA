@@ -662,6 +662,9 @@ S -Team & S - staff*/
   text-align: center;
 }
 
+.mfooter {
+  margin-top: 10vmin;
+}
 /* Pads & Small laptops*/
 @media only screen and (min-width: 768px) {
   .hero-slider h1 {

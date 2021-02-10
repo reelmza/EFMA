@@ -1,5 +1,4 @@
 html {
-  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -7,7 +6,7 @@ html {
 :root {
   --background: #fff;
   --foreground: #000;
-  --theme: #ac0818;
+  --theme: #ce192b;
 
   --global-padding: 0 10vmin;
   --animate-duration: 1000ms;
@@ -489,12 +488,15 @@ h6 {
   height: 55vmin; /* 55vmin for image, 5vmin for padding below */
 }
 
-.swiper-scrollbar {
-  background: none;
-  top: 50vmin;
+.swiper-pagination {
+  top: 45vmin;
 }
-.swiper-scrollbar-drag {
+
+.swiper-pagination-bullet {
   background: var(--background);
+  height: 1.5vmin;
+  width: 1.5vmin;
+
   border-radius: 0px;
 }
 
@@ -646,6 +648,9 @@ h6 {
   .svg-wrapper {
     display: none;
   }
+  .mfooter {
+    margin-top: 0vmin;
+  }
 
   .hero-slider h1,
   .hero-slider p {
@@ -655,6 +660,9 @@ h6 {
     margin: 0;
   }
 
+  .hero-slider p {
+    margin: 3vmin 10vmin 8.5vmin 0vmin;
+  }
   .hero-buttons {
     flex-direction: row;
     justify-content: flex-start;
@@ -714,6 +722,21 @@ h6 {
   .contact-form-title,
   .contact-form-text {
     text-align: left;
+  }
+
+  .slider-caption {
+    justify-content: center;
+    align-items: center;
+
+    height: unset;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .slider-caption p {
+    font-family: "Roboto";
+    color: #000;
+    font-size: 5vmin;
   }
 }
 

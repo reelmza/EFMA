@@ -7,7 +7,7 @@ html {
 :root {
   --background: #fff;
   --foreground: #000;
-  --theme: #cb2232;
+  --theme: #ac0818;
 
   --global-padding: 0 10vmin;
   --animate-duration: 1000ms;
@@ -87,15 +87,7 @@ h6 {
   z-index: 6;
 }
 
-/* .
-.
-.
-.
-.
-.
-.
-S-logo */
-
+/* LOGO                                            //// */
 .logo-box {
   height: 7vh;
   width: 7vh;
@@ -111,15 +103,7 @@ S-logo */
   width: 100%;
 }
 
-/* 
-.
-.
-.
-.
-.
-.
-.
-S-nav */
+/* NAVIGATON                                       //// */
 
 .nav-box {
   height: 100%;
@@ -225,14 +209,7 @@ S-nav */
   font-weight: 600;
 }
 
-/* 
-.
-.
-.
-.
-.
-.
-S - Box Model */
+/* BOX MODEL                                 ///// */
 .box-heading {
   padding: 0 10vmin;
   min-height: 87vh;
@@ -297,14 +274,7 @@ S - Box Model */
   z-index: 0;
 }
 
-/* 
-.
-.
-.
-.
-.
-.
-S-hero */
+/* HERO                                          /////  */
 
 .hero {
   height: 87vh;
@@ -409,14 +379,8 @@ S-hero */
 .svg-wrapper svg {
   height: 100%;
 }
-/* .
-.
-.
-.
-.
-.
-.
-S - Explain */
+
+/* EXPLAIN                                      //// */
 
 .section {
   padding: var(--global-padding);
@@ -476,14 +440,7 @@ S - Explain */
   font-size: 5vmin;
 }
 
-/* .
-.
-.
-.
-.
-.
-.
-S - Patner */
+/* PATNERS                                         //// */
 
 .patners {
   padding-bottom: 0;
@@ -515,14 +472,7 @@ S - Patner */
   color: var(--foreground);
 }
 
-/* .
-.
-.
-.
-.
-.
-.
-S -Team & S - staff*/
+/* STAFF                                        //// */
 
 .team,
 .staff {
@@ -568,7 +518,7 @@ S -Team & S - staff*/
   font-size: 4vmin;
 }
 
-/* Staff */
+/* STAFF                                      /////  */
 .staff-picture {
   padding: 10vmin;
 }
@@ -580,24 +530,21 @@ S -Team & S - staff*/
 
 .staff-picture-item img {
   width: 30vmin;
-  padding: 5vmin;
+  padding: 2vmin;
   margin-right: 10vmin;
-  background: rgb(212, 212, 212);
-  /* border-radius: 50%; */
+  background: #e7e7e7;
+  border-radius: 50%;
 }
 
-.staff-picture-item h6 {
+.staff-picture-item h6,
+.staff-picture-item p {
   font-size: 6vmin;
-  /* text-align: left; */
   margin-top: 3vmin;
   line-height: 0.9;
 }
 
 .staff-picture-item p {
   font-size: 4vmin;
-  /* text-align: center; */
-  margin-top: 3vmin;
-  line-height: 0.9;
 }
 
 .staff-box-heading {
@@ -611,13 +558,7 @@ S -Team & S - staff*/
   color: var(--foreground);
 }
 
-/* .
-.
-.
-.
-.
-.
-. S - Mesage form */
+/* MESSAGE                               //// */
 
 .contact {
   padding: 10vmin;
@@ -665,6 +606,7 @@ S -Team & S - staff*/
 .mfooter {
   margin-top: 10vmin;
 }
+
 /* Pads & Small laptops*/
 @media only screen and (min-width: 768px) {
   .hero-slider h1 {

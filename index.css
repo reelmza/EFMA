@@ -226,7 +226,6 @@ h6 {
 }
 
 .box-heading p {
-  font-family: "Roboto";
   font-weight: 300;
   line-height: 1.1;
   color: #fff;
@@ -263,6 +262,11 @@ h6 {
 .explain-box-heading h6,
 .explain-box-heading p {
   color: var(--background);
+}
+
+.explain-box-heading p {
+  font-family: "Bitter";
+  font-weight: 300;
 }
 .explain-box-heading svg,
 .staff-box-heading svg {
@@ -522,7 +526,7 @@ h6 {
 }
 
 .slider-caption p {
-  font-family: "Roboto";
+  font-weight: 400;
   color: #fff;
   font-size: 4vmin;
 }

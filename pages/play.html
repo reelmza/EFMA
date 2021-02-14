@@ -8,6 +8,13 @@
       rel="stylesheet"
       href="../src/modules/bootstrap/css/bootstrap.min.css"
     />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -68,14 +75,25 @@
       </div>
 
       <div class="section contact container-fluid" id="contact">
-        <div class="row">
-          <div class="col-12 col-xl-6">
-            <h6 class="contact-form-title text-left">PESONAL DATA</h6>
-
-            <form class="contact-form">
+        <h6 class="contact-form-title text-center text-lg-left">
+          PESONAL DATA
+        </h6>
+        <form class="contact-form">
+          <div class="row">
+            <div class="col-12 col-lg-6">
               <input type="text" placeholder="Full Name" />
-
+            </div>
+            <div class="col-12 col-lg-6">
               <input type="number" placeholder="Age" min="15" max="18" />
+            </div>
+            <div class="col-12 col-lg-6">
+              <input type="email" placeholder="E-mail" />
+            </div>
+            <div class="col-12 col-lg-6">
+              <input type="text" placeholder="Phone" />
+            </div>
+
+            <div class="col-12 col-lg-6">
               <select>
                 <option value="">Possition</option>
 
@@ -87,17 +105,22 @@
                 <option value="CD">CENTRAL DEFENSE</option>
                 <option value="WB">WING DEFENSE</option>
               </select>
+            </div>
+
+            <div class="col-12 col-lg-6">
               <select>
                 <option value="">Foot Order</option>
 
                 <option value="LEFT-FOOTED">LEFT</option>
                 <option value="RIGHT-FOOTED">RIGHT</option>
               </select>
-              <input type="email" placeholder="E-mail" />
+            </div>
+
+            <div class="col-12">
               <button type="submit" disabled>SEND</button>
-            </form>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
 

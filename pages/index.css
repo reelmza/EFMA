@@ -247,19 +247,20 @@ h6 {
 
 /* MESSAGE */
 .closed-audition {
-  font-size: 4vmin;
+  font-size: 5vmin;
   min-height: 83vh;
-
-  text-align: center;
 }
 
 .social-handles {
   margin-bottom: 10vmin;
+  font-size: 3.8vmin;
 }
 
 .social-handles div a {
-  color: var(--theme);
+  color: rgb(56, 128, 211);
   font-family: "Roboto";
+  margin-right: 1vmin;
+  font-weight: 400;
 }
 
 .back-button a {
@@ -269,5 +270,6 @@ h6 {
 @media only screen and (min-width: 768px) {
   .closed-audition {
     padding: 0 20vw;
+    font-size: 4vmin;
   }
 }

@@ -231,7 +231,8 @@ h6 {
   color: #555;
 }
 
-.contact-form button {
+.contact-form button,
+.back-button button {
   padding: 4.5vmin 20vmin;
   font-size: 4vmin;
   background: var(--theme);
@@ -242,4 +243,31 @@ h6 {
 .contact-form-title {
   font-size: 4vmin;
   margin-bottom: 1vmin;
+}
+
+/* MESSAGE */
+.closed-audition {
+  font-size: 4vmin;
+  min-height: 83vh;
+
+  text-align: center;
+}
+
+.social-handles {
+  margin-bottom: 10vmin;
+}
+
+.social-handles div a {
+  color: var(--theme);
+  font-family: "Roboto";
+}
+
+.back-button a {
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .closed-audition {
+    padding: 0 20vw;
+  }
 }

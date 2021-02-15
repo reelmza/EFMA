@@ -381,11 +381,9 @@ h6 {
 }
 
 .rocket-svg {
-  top: 5vmin;
+  top: 10vmin;
   right: 5vmin;
   height: 20vmin;
-
-  transform: rotate(15deg);
 }
 
 .svg-wrapper svg {

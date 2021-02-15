@@ -82,10 +82,11 @@
       </div>
 
       <div class="section contact container-fluid" id="contact">
-        <h6 class="contact-form-title text-center text-lg-left">
+        <h6 class="contact-form-title text-center text-lg-left d-none">
           PESONAL DATA
         </h6>
-        <form class="contact-form">
+
+        <form class="contact-form d-none">
           <div class="row">
             <div class="col-12 col-lg-6">
               <input type="text" placeholder="Full Name" />
@@ -123,11 +124,51 @@
               </select>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 d-flex justify-content-center">
               <button type="submit" disabled>SEND</button>
             </div>
           </div>
         </form>
+
+        <div class="closed-audition d-flex flex-column justify-content-center">
+          <p>
+            We are currently not looking for new players, check again after some
+            time or follow our social media hadles to be updated.
+          </p>
+
+          <div class="social-handles">
+            <div class="facebook">
+              <a href="#">FACEBOOK </a>
+            </div>
+            <div class="twitter">
+              <a href="#">TWITTER</a>
+            </div>
+            <div class="instagram">
+              <a href="#">INSTAGRAM</a>
+            </div>
+          </div>
+
+          <div class="back-button d-flex justify-content-center">
+            <button>
+              <a href="/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#fff"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+                BACK
+              </a>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 

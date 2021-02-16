@@ -208,68 +208,32 @@ h6 {
   font-weight: 600;
 }
 
-/* MESSAGE                               //// */
-.contact {
+/* CURRENT                               //// */
+.section {
   padding: 2vmin 10vmin;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-form input,
-.contact-form select {
-  font-size: 4vmin;
-
-  width: 100%;
+.fixture-title {
+  padding: 0 0 3vmin 0;
   margin-bottom: 3vmin;
-  padding: 5vmin 3vmin;
-  background: var(--background);
-  border: solid 1px #adadad;
-  color: #555;
+  border-bottom: 1px solid #000;
 }
-
-.contact-form button,
-.back-button button {
-  padding: 4.5vmin 20vmin;
-  font-size: 4vmin;
-  background: var(--theme);
-  color: #fff;
-  border: none;
-}
-
-.contact-form-title {
-  font-size: 4vmin;
-  margin-bottom: 1vmin;
-}
-
-/* MESSAGE */
-.closed-audition {
+.fixture-title h6 {
   font-size: 5vmin;
-  min-height: 75vh;
 }
 
-.social-handles {
-  margin-bottom: 10vmin;
-  font-size: 3.8vmin;
+.fixture-team img {
+  height: 13vmin;
 }
 
-.social-handles div a {
-  color: rgb(56, 128, 211);
-  font-family: "Roboto";
-  margin-right: 1vmin;
-  font-weight: 400;
+.versus {
+  font-size: 8vmin;
 }
 
-.back-button a {
-  color: #fff;
+.away-team {
+  margin-left: 15vmin;
 }
 
-@media only screen and (min-width: 768px) {
-  .closed-audition {
-    padding: 0 20vw;
-    font-size: 4vmin;
-  }
+.home-team {
+  margin-right: 15vmin;
 }

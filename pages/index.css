@@ -220,11 +220,14 @@ h6 {
 
 .fixture-title {
   padding: 5vmin;
-  background: var(--theme);
+  background: var(--foreground);
+  border-left: var(--theme) solid 2vmin;
   color: #fff;
 }
+
 .fixture-title h6 {
   font-size: 5vmin;
+  font-weight: 800;
 }
 
 .fixture-team img {
@@ -242,6 +245,7 @@ h6 {
 .fixture-venue {
   color: #bebebe;
 }
+
 .away-team {
   margin-right: 3vmin;
 }

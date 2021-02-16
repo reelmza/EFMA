@@ -215,7 +215,6 @@ h6 {
 
 .fixture {
   padding-bottom: 1vmin;
-  border-bottom: 1px solid #bebebe;
 }
 
 .fixture-title {
@@ -242,8 +241,9 @@ h6 {
   font-size: 4vmin;
 }
 
-.fixture-venue {
+.fixture-venue h6 {
   color: #bebebe;
+  font-size: 4vmin;
 }
 
 .away-team {

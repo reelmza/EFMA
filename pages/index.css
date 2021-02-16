@@ -242,8 +242,6 @@ h6 {
 }
 
 .fixture-venue h6 {
-  font-family: "Roboto";
-  color: #ddd;
   font-weight: 300;
   font-size: 3vmin;
 }
@@ -258,13 +256,12 @@ h6 {
 /* table */
 .table-row {
   border-bottom: solid 1px #ddd;
-  padding-bottom: 1vmin;
-  margin-bottom: 1vmin;
+  padding: 3.5vmin 0;
 }
 
 .table-row div {
   min-width: 10vmin;
-  font-size: 3vmin;
+  font-size: 3.5vmin;
 }
 
 .table-row-1 .serial,
@@ -275,7 +272,7 @@ h6 {
 .table-row-20 .serial {
   background: #0e53ad;
   color: #fff;
-  margin: -1vmin 0;
+  margin: -3vmin 0;
 }
 
 .table-row-18 .serial,

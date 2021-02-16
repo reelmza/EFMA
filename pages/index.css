@@ -225,15 +225,18 @@ h6 {
 .fixture-team img {
   height: 13vmin;
 }
+.fixture-team h6 {
+  font-size: 4vmin;
+}
 
 .versus {
   font-size: 8vmin;
 }
 
-.away-team {
+/* .away-team {
   margin-left: 15vmin;
 }
 
 .home-team {
   margin-right: 15vmin;
-}
+} */

@@ -213,10 +213,16 @@ h6 {
   padding: 2vmin 10vmin;
 }
 
+.fixture {
+  padding-bottom: 1vmin;
+  border-bottom: 1px solid #bebebe;
+}
+
 .fixture-title {
-  padding: 0 0 3vmin 0;
+  padding: 3vmin;
   margin-bottom: 3vmin;
-  border-bottom: 1px solid #000;
+  background: var(--theme);
+  color: #fff;
 }
 .fixture-title h6 {
   font-size: 5vmin;
@@ -225,14 +231,18 @@ h6 {
 .fixture-team img {
   height: 13vmin;
 }
+
 .fixture-team h6 {
   font-size: 4vmin;
 }
 
 .versus {
-  font-size: 8vmin;
+  font-size: 4vmin;
 }
 
+.fixture-venue {
+  color: #bebebe;
+}
 /* .away-team {
   margin-left: 15vmin;
 }

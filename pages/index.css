@@ -82,7 +82,9 @@ h6 {
   align-items: center;
   justify-content: space-between;
 
-  background: rgb(243, 243, 243);
+  background: #ffffff;
+  box-shadow: 0px 1px 2px #cecece;
+
   z-index: 6;
 }
 
@@ -219,9 +221,9 @@ h6 {
 
 .fixture-title {
   padding: 5vmin;
-  background: var(--foreground);
+  background: rgb(241, 241, 241);
   border-left: var(--theme) solid 2vmin;
-  color: #fff;
+  color: #000;
 }
 
 .fixture-title h6 {

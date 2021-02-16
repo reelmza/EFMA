@@ -221,9 +221,8 @@ h6 {
 
 .fixture-title {
   padding: 5vmin;
-  background: rgb(241, 241, 241);
-  border-left: var(--theme) solid 2vmin;
-  color: #000;
+  background: #f8f8f8;
+  border-left: var(--foreground) solid 2vmin;
 }
 
 .fixture-title h6 {
@@ -266,6 +265,9 @@ h6 {
   font-size: 3.5vmin;
 }
 
+.table-row-heading div {
+  font-weight: 500;
+}
 .table-row-1 .serial,
 .table-row-2 .serial,
 .table-row-3 .serial,

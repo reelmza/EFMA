@@ -255,8 +255,8 @@ h6 {
 }
 /* table */
 .table-row {
-  border-bottom: solid 1px #000;
-  padding: 3.5vmin 0;
+  border-bottom: solid 1px rgb(230, 230, 230);
+  padding: 4vmin 0;
 }
 
 .table-row div {
@@ -272,7 +272,7 @@ h6 {
 .table-row-20 .serial {
   background: #0e53ad;
   color: #fff;
-  margin: -3vmin 0;
+  margin: -2vmin 0;
 }
 
 .table-row-18 .serial,
@@ -282,7 +282,7 @@ h6 {
 }
 
 .table-row .serial {
-  margin-right: 3px;
+  margin-right: 4vmin;
   display: flex;
   align-items: center;
   justify-content: center;

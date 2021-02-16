@@ -21,8 +21,6 @@
       href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="main container-fluid px-0">
@@ -132,8 +130,8 @@
 
         <div class="closed-audition d-flex flex-column justify-content-center">
           <p>
-            We are currently not looking for new players, check again after some
-            time or follow our social media hadles to be updated.
+            Sorry! we are currently not scouting for new players, follow our
+            social media hadles for new updates.
           </p>
 
           <div class="social-handles d-flex">
@@ -173,6 +171,332 @@
       </div>
     </div>
 
-    <script src="index.js"></script>
+    <style>
+      html {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+      :root {
+        --background: #fff;
+        --foreground: #000;
+        --theme: #ce192b;
+
+        --global-padding: 0 10vmin;
+        --animate-duration: 1000ms;
+      }
+
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Bitter", "Trebuchet MS", arial;
+        line-height: 1.3;
+        font-weight: 300;
+        font-size: 5vmin;
+
+        color: #000;
+        background: var(--background);
+        padding-top: 13vh;
+      }
+
+      .btn,
+      button {
+        border-radius: 10vmin;
+        margin: 0;
+        padding: 0;
+        border: solid 1vmin var(--foreground);
+        background: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      button:focus {
+        outline: none;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      * a {
+        color: #000;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        height: 13vh;
+        width: 100vw;
+        padding: 0 10vmin;
+
+        position: fixed;
+        top: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background: #fff;
+        box-shadow: 0px 1px 3px #5c5c5c;
+        z-index: 6;
+      }
+
+      /* LOGO                                            //// */
+      .logo-box {
+        height: 7vh;
+        width: 7vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--foreground);
+      }
+
+      .logo-box img {
+        width: 100%;
+      }
+
+      /* NAVIGATON                                       //// */
+
+      .nav-box {
+        height: 100%;
+      }
+
+      .desktop-nav,
+      .mobile-nav {
+        display: none;
+        align-items: center;
+        height: 100%;
+      }
+
+      .desktop-nav ul {
+        display: flex;
+        align-items: center;
+
+        height: 100%;
+        width: 100%;
+        margin: 0;
+      }
+
+      .desktop-nav ul li {
+        margin-right: 2vmin;
+        list-style-type: none;
+        text-transform: uppercase;
+      }
+
+      .desktop-nav ul li a {
+        color: var(--foreground);
+        font-size: 3.5vmin;
+        font-weight: 600;
+      }
+
+      .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        width: fit-content;
+        width: 10vmin;
+
+        position: relative;
+      }
+
+      .mobile-nav svg {
+        cursor: pointer;
+        font-size: 24px;
+      }
+
+      .search-icon {
+        margin-right: 8vmin;
+        transition: 0.3s;
+        margin-top: 1.2vh;
+      }
+
+      #site-search {
+        border: solid 1px #000;
+
+        height: 50%;
+        width: 50vmin;
+        padding: 0 4vmin;
+
+        position: absolute;
+        right: -100vw;
+        transition: 0.3s;
+
+        outline: none;
+      }
+
+      .mobile-nav-dropdown {
+        position: fixed;
+        height: 0vmin;
+        width: 90vmin;
+        padding: 5vmin;
+
+        top: -14vh;
+        right: 5vmin;
+
+        background: #fff;
+        transition: 0.5s;
+        z-index: 5;
+        overflow: hidden;
+      }
+
+      .mobile-nav-dropdown .last {
+        border-bottom: none;
+      }
+
+      .mobile-nav-dropdown li {
+        list-style-type: none;
+
+        height: 20vmin;
+
+        display: flex;
+        align-items: center;
+
+        border-bottom: 1px solid #d8d8d8;
+      }
+
+      .mobile-nav-dropdown li a {
+        color: #000;
+        font-size: 6vmin;
+        font-weight: 600;
+      }
+
+      /* MESSAGE                               //// */
+      .contact {
+        padding: 2vmin 10vmin;
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-form input,
+      .contact-form select {
+        font-size: 4vmin;
+
+        width: 100%;
+        margin-bottom: 3vmin;
+        padding: 5vmin 3vmin;
+        background: var(--background);
+        border: solid 1px #adadad;
+        color: #555;
+      }
+
+      .contact-form button {
+        padding: 4.5vmin 20vmin;
+        font-size: 4vmin;
+        background: var(--theme);
+        color: #fff;
+        border: none;
+      }
+
+      .contact-form-title {
+        font-size: 4vmin;
+        margin-bottom: 1vmin;
+      }
+
+      /* MESSAGE */
+      .closed-audition {
+        font-size: 5vmin;
+        min-height: 75vh;
+      }
+
+      .social-handles {
+        margin-bottom: 10vmin;
+        font-size: 3.8vmin;
+      }
+
+      .social-handles div a {
+        color: #3880d3;
+        font-family: "Roboto";
+        margin-right: 1vmin;
+        font-weight: 400;
+      }
+
+      .back-button button {
+        width: 40vmin;
+        font-size: 4vmin;
+        background: var(--theme);
+        border: none;
+      }
+
+      .back-button button a {
+        color: #fff;
+        width: 100%;
+        padding: 4.5vmin 0;
+      }
+
+      .back-button button a svg {
+        margin-bottom: 3px;
+      }
+
+      @media only screen and (min-width: 992px) {
+        .closed-audition {
+          padding: 0 15vmin;
+          font-size: 4vmin;
+        }
+      }
+    </style>
+    <script>
+      const sidebarBtn = document.getElementsByClassName("bar-icon")[0];
+      const sidebar_dropdown = document.getElementsByClassName(
+        "mobile-nav-dropdown"
+      )[0];
+
+      const searchBtn = document.getElementsByClassName("search-icon")[0];
+      const searchInput = document.getElementById("site-search");
+
+      let sidebar_state = 0;
+      let search_state = 0;
+
+      sidebarBtn.addEventListener("click", function () {
+        console.log("Sidebar Click");
+        if (sidebar_state == 0) {
+          sidebar_dropdown.style.height = "90vmin";
+          sidebar_dropdown.style.top = "16vh";
+          return (sidebar_state = 1);
+        }
+        sidebar_dropdown.style.height = "0px";
+        sidebar_dropdown.style.top = "-14vh";
+        return (sidebar_state = 0);
+      });
+
+      searchBtn.addEventListener("click", function () {
+        console.log("Search Click");
+        if (search_state == 0) {
+          searchInput.style.right = "0";
+          searchBtn.style.marginRight = "48vmin";
+          return (search_state = 1);
+        }
+
+        searchInput.style.right = null;
+        searchBtn.style.marginRight = null;
+        return (search_state = 0);
+      });
+    </script>
   </body>
 </html>

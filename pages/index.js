@@ -1,4 +1,3 @@
-
 const sidebarBtn = document.getElementsByClassName('bar-icon')[0]
 const sidebar_dropdown = document.getElementsByClassName('mobile-nav-dropdown')[0]
 

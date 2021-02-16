@@ -220,7 +220,6 @@ h6 {
 
 .fixture-title {
   padding: 5vmin;
-  margin-bottom: 5vmin;
   background: var(--theme);
   color: #fff;
 }
@@ -243,10 +242,10 @@ h6 {
 .fixture-venue {
   color: #bebebe;
 }
-/* .away-team {
-  margin-left: 15vmin;
+.away-team {
+  margin-right: 3vmin;
 }
 
 .home-team {
-  margin-right: 15vmin;
-} */
+  margin-left: 3vmin;
+}

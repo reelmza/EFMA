@@ -293,9 +293,9 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
 
-  padding-top: 10vmin;
+  /* padding-top: 10vmin; */
 }
 
 .hero-slider h1 {
@@ -310,6 +310,7 @@ h6 {
 
 .hero-slider p {
   font-family: "Bitter";
+  font-style: italic;
   margin: 6vmin 10vmin 8.5vmin 10vmin;
   color: #505050;
   font-weight: 200;
@@ -381,9 +382,9 @@ h6 {
 }
 
 .rocket-svg {
-  top: 10vmin;
+  top: 15vmin;
   right: 5vmin;
-  height: 20vmin;
+  height: 25vmin;
 }
 
 .svg-wrapper svg {
@@ -623,7 +624,7 @@ h6 {
 /* Pads & Small laptops*/
 @media only screen and (min-width: 768px) {
   .hero-slider h1 {
-    font-size: 11.5vmin;
+    font-size: 10.5vmin;
     margin: 5vmin 10vmin 0 10vmin;
     padding-bottom: 0vmin;
   }
@@ -637,10 +638,12 @@ h6 {
 
   .hero-slider p {
     margin: 1vmin 10vmin 2vmin 10vmin;
+    font-size: 3.5vmin;
   }
 
   .hero-slider {
     margin-top: 0vmin;
+    padding-top: 0vmin;
   }
 
   .rocket-svg {

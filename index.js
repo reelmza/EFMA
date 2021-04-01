@@ -12,7 +12,7 @@ let search_state = 0
 sidebarBtn.addEventListener('click', function () {
     console.log('Sidebar Click')
     if (sidebar_state == 0) {
-        sidebar_dropdown.style.height = '90vmin'
+        sidebar_dropdown.style.height = '100vh'
         sidebar_dropdown.style.top = "16vh"
         return sidebar_state = 1
     }

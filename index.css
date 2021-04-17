@@ -194,17 +194,17 @@ h6 {
 .mobile-nav-dropdown li {
   list-style-type: none;
 
-  height: 20vmin;
+  height: 13vmin;
 
   display: flex;
   align-items: center;
 
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 .mobile-nav-dropdown li a {
-  color: #000;
-  font-size: 6vmin;
+  color: #222;
+  font-size: 4vmin;
   font-weight: 600;
 }
 
@@ -475,11 +475,13 @@ h6 {
 }
 
 .patners-logo-item img {
-  width: 30%;
+  width: 50%;
 }
 
 .patners-logo-item h6 {
-  font-size: 6vmin;
+  margin-top: 1vmin;
+  font-size: 3vmin;
+  text-align: center;
   color: var(--foreground);
 }
 

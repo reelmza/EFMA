@@ -2,12 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EFMA - Play</title>
-    <link
-      rel="stylesheet"
-      href="../src/modules/bootstrap/css/bootstrap.min.css"
-    />
+    <title>Guest Book</title>
 
     <link
       rel="stylesheet"
@@ -15,7 +12,7 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-
+    <!-- Font, Font, Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Roboto:wght@300;400;500&display=swap"
@@ -27,7 +24,7 @@
       <div class="header">
         <div class="logo-box">
           <a href="/"
-            ><img src="../src/images/site_images/EFMA.png" alt="EFMA Logo"
+            ><img src="../../src/images/site_images/EFMA.png" alt="EFMA Logo"
           /></a>
         </div>
         <div class="nav-box">
@@ -63,8 +60,11 @@
 
             <ul class="mobile-nav-dropdown">
               <li><a href="/">HOME</a></li>
-              <li><a href="/about.html">ABOUT</a></li>
+              <li><a href="/pages/about/about.html">ABOUT</a></li>
               <li><a href="/service.html">SERVICE</a></li>
+              <li><a href="/#">GUEST BOOK</a></li>
+              <li><a href="/#">GALLERY</a></li>
+              <li><a href="/#">MISSION & VISION</a></li>
               <li class="last"><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
@@ -80,93 +80,24 @@
       </div>
 
       <div class="section contact container-fluid" id="contact">
-        <h6 class="contact-form-title text-center text-lg-left d-none">
-          PESONAL DATA
-        </h6>
-
-        <form class="contact-form d-none">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <input type="text" placeholder="Full Name" />
-            </div>
-            <div class="col-12 col-lg-6">
-              <input type="number" placeholder="Age" min="15" max="18" />
-            </div>
-            <div class="col-12 col-lg-6">
+        <div class="row">
+          <div class="col-12 col-xl-6">
+            <h6 class="contact-form-title text-center">SEND A MESSAGE</h6>
+            <form class="contact-form">
+              <input type="text" placeholder="Your Name" />
               <input type="email" placeholder="E-mail" />
-            </div>
-            <div class="col-12 col-lg-6">
-              <input type="text" placeholder="Phone" />
-            </div>
+              <textarea
+                name="contact-mesage"
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
 
-            <div class="col-12 col-lg-6">
-              <select>
-                <option value="">Possition</option>
-
-                <option value="CF">CENTER FORWARD</option>
-                <option value="RW">RIGHT WING</option>
-                <option value="LW">LEFT WING</option>
-                <option value="MF">MID FEILD</option>
-
-                <option value="CD">CENTRAL DEFENSE</option>
-                <option value="WB">WING DEFENSE</option>
-              </select>
-            </div>
-
-            <div class="col-12 col-lg-6">
-              <select>
-                <option value="">Foot Order</option>
-
-                <option value="LEFT-FOOTED">LEFT</option>
-                <option value="RIGHT-FOOTED">RIGHT</option>
-              </select>
-            </div>
-
-            <div class="col-12 d-flex justify-content-center">
-              <button type="submit" disabled>SEND</button>
-            </div>
-          </div>
-        </form>
-
-        <div class="closed-audition d-flex flex-column justify-content-center">
-          <p>
-            Sorry! we are currently not scouting for new players, follow our
-            social media hadles for new updates.
-          </p>
-
-          <div class="social-handles d-flex">
-            <div class="facebook">
-              <a href="#">FACEBOOK, </a>
-            </div>
-            <div class="twitter">
-              <a href="#">TWITTER, </a>
-            </div>
-            <div class="mr-1">OR</div>
-            <div class="instagram">
-              <a href="#">INSTAGRAM</a>
-            </div>
+              <button type="submit">SEND</button>
+            </form>
           </div>
 
-          <div class="back-button d-flex justify-content-lg-center">
-            <button>
-              <a href="/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#fff"
-                  class="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                  />
-                </svg>
-                BACK
-              </a>
-            </button>
-          </div>
+          <h6 class="contact-form-title mt-2">OAYASTECH &COPY; 2021</h6>
         </div>
       </div>
     </div>
@@ -247,7 +178,7 @@
       .header {
         height: 13vh;
         width: 100vw;
-        padding: 0 10vmin;
+        padding: 0 11vmin;
 
         position: fixed;
         top: 0;
@@ -257,7 +188,6 @@
         justify-content: space-between;
 
         background: #fff;
-        box-shadow: 0px 1px 3px #5c5c5c;
         z-index: 6;
       }
 
@@ -369,23 +299,24 @@
       .mobile-nav-dropdown li {
         list-style-type: none;
 
-        height: 20vmin;
+        height: 13vmin;
 
         display: flex;
         align-items: center;
 
-        border-bottom: 1px solid #d8d8d8;
+        border-bottom: 1px solid #f5f5f5;
       }
 
       .mobile-nav-dropdown li a {
-        color: #000;
-        font-size: 6vmin;
+        color: #222;
+        font-size: 4vmin;
         font-weight: 600;
       }
 
       /* MESSAGE                               //// */
+
       .contact {
-        padding: 2vmin 10vmin;
+        padding: 10vmin;
       }
 
       .contact-form {
@@ -395,15 +326,16 @@
       }
 
       .contact-form input,
-      .contact-form select {
+      .contact-form textarea {
         font-size: 4vmin;
 
         width: 100%;
         margin-bottom: 3vmin;
         padding: 5vmin 3vmin;
-        background: var(--background);
-        border: solid 1px #adadad;
-        color: #555;
+      }
+
+      .contact-form textarea {
+        height: 40vmin;
       }
 
       .contact-form button {
@@ -417,86 +349,25 @@
       .contact-form-title {
         font-size: 4vmin;
         margin-bottom: 1vmin;
+        text-align: center;
       }
 
-      /* MESSAGE */
-      .closed-audition {
-        font-size: 5vmin;
-        min-height: 75vh;
+      .contact-form-text {
+        font-size: 3.5vmin;
+        font-weight: 200;
+        text-align: center;
       }
 
-      .social-handles {
-        margin-bottom: 10vmin;
-        font-size: 3.8vmin;
+      .mfooter {
+        margin-top: 10vmin;
       }
 
-      .social-handles div a {
-        color: #3880d3;
-        font-family: "Roboto";
-        margin-right: 1vmin;
-        font-weight: 400;
-      }
-
-      .back-button button {
-        width: 40vmin;
-        font-size: 4vmin;
-        background: var(--theme);
-        border: none;
-      }
-
-      .back-button button a {
-        color: #fff;
-        width: 100%;
-        padding: 4.5vmin 0;
-      }
-
-      .back-button button a svg {
-        margin-bottom: 3px;
-      }
-
-      @media only screen and (min-width: 992px) {
-        .closed-audition {
-          padding: 0 15vmin;
-          font-size: 4vmin;
+      /* Small Laptops */
+      @media only screen and (min-width: 1025px) {
+        .mfooter {
+          margin-top: 0vmin;
         }
       }
     </style>
-    <script>
-      const sidebarBtn = document.getElementsByClassName("bar-icon")[0];
-      const sidebar_dropdown = document.getElementsByClassName(
-        "mobile-nav-dropdown"
-      )[0];
-
-      const searchBtn = document.getElementsByClassName("search-icon")[0];
-      const searchInput = document.getElementById("site-search");
-
-      let sidebar_state = 0;
-      let search_state = 0;
-
-      sidebarBtn.addEventListener("click", function () {
-        console.log("Sidebar Click");
-        if (sidebar_state == 0) {
-          sidebar_dropdown.style.height = "90vmin";
-          sidebar_dropdown.style.top = "16vh";
-          return (sidebar_state = 1);
-        }
-        sidebar_dropdown.style.height = "0px";
-        sidebar_dropdown.style.top = "-14vh";
-        return (sidebar_state = 0);
-      });
-
-      searchBtn.addEventListener("click", function () {
-        console.log("Search Click");
-        if (search_state == 0) {
-          searchInput.style.right = "0";
-          searchBtn.style.marginRight = "48vmin";
-          return (search_state = 1);
-        }
-
-        searchInput.style.right = null;
-        searchBtn.style.marginRight = null;
-        return (search_state = 0);
-      });
-    </script>
   </body>
 </html>

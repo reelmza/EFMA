@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guest Book</title>
+    <title>Contact</title>
 
+    <!-- Style , Style , Style -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+
     <!-- Font, Font, Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -24,7 +25,7 @@
       <div class="header">
         <div class="logo-box">
           <a href="/"
-            ><img src="../../src/images/site_images/EFMA.png" alt="EFMA Logo"
+            ><img src="../src/images/site_images/EFMA.png" alt="EFMA Logo"
           /></a>
         </div>
         <div class="nav-box">
@@ -62,7 +63,7 @@
               <li><a href="/">HOME</a></li>
               <li><a href="/pages/about/about.html">ABOUT</a></li>
               <li><a href="/service.html">SERVICE</a></li>
-              <li><a href="/#">GUEST BOOK</a></li>
+              <li><a href="/pages/guest_book/guestbook.html">GUEST BOOK</a></li>
               <li><a href="/#">GALLERY</a></li>
               <li><a href="/#">MISSION & VISION</a></li>
               <li class="last"><a href="#contact">CONTACT</a></li>
@@ -81,27 +82,36 @@
 
       <div class="section contact container-fluid" id="contact">
         <div class="row">
-          <div class="col-12 col-xl-6">
-            <h6 class="contact-form-title text-center">SEND A MESSAGE</h6>
-            <form class="contact-form">
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="E-mail" />
-              <textarea
-                name="contact-mesage"
-                cols="30"
-                rows="10"
-                placeholder="Your Message"
-              ></textarea>
+          <div class="col-12 col-xl-6 mfooter">
+            <h6 class="contact-form-title">ADRESS</h6>
+            <p class="contact-form-text">
+              Penthhouse Suit,Plot 1019,<br />
+              Gimbiya Street, Area 11 Garki<br />
+              Abuja
+            </p>
 
-              <button type="submit">SEND</button>
-            </form>
+            <h6 class="contact-form-title">PHONE</h6>
+
+            <p class="contact-form-text">+234 - 8097799988</p>
+
+            <h6 class="contact-form-title">EMAIL</h6>
+
+            <p class="contact-form-text">info@executivefootball.org</p>
+
+            <h6 class="contact-form-title">SOCIAL</h6>
+
+            <p class="contact-form-text">
+              <a href="https://facebook.com/theEFMA">@theEFMA</a>
+            </p>
+
+            <h6 class="contact-form-title text-center text-xl-left mt-2">
+              Powered By <br />
+              OAYASTECH &COPY; 2021
+            </h6>
           </div>
-
-          <h6 class="contact-form-title mt-2">OAYASTECH &COPY; 2021</h6>
         </div>
       </div>
     </div>
-
     <style>
       html {
         -webkit-text-size-adjust: 100%;
@@ -313,61 +323,181 @@
         font-weight: 600;
       }
 
-      /* MESSAGE                               //// */
-
       .contact {
         padding: 10vmin;
-      }
-
-      .contact-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .contact-form input,
-      .contact-form textarea {
-        font-size: 4vmin;
-
-        width: 100%;
-        margin-bottom: 3vmin;
-        padding: 5vmin 3vmin;
-      }
-
-      .contact-form textarea {
-        height: 40vmin;
-      }
-
-      .contact-form button {
-        padding: 4.5vmin 20vmin;
-        font-size: 4vmin;
-        background: var(--theme);
-        color: #fff;
-        border: none;
-      }
-
-      .contact-form-title {
-        font-size: 4vmin;
-        margin-bottom: 1vmin;
-        text-align: center;
-      }
-
-      .contact-form-text {
-        font-size: 3.5vmin;
-        font-weight: 200;
-        text-align: center;
       }
 
       .mfooter {
         margin-top: 10vmin;
       }
 
+      /* Pads & Small laptops*/
+      @media only screen and (min-width: 768px) {
+        .hero-slider h1 {
+          font-size: 10.5vmin;
+          margin: 5vmin 10vmin 0 10vmin;
+          padding-bottom: 0vmin;
+        }
+
+        .hero-buttons button {
+          height: 15vmin;
+        }
+        .hero-buttons button a {
+          font-size: 3.8vmin;
+        }
+
+        .hero-slider p {
+          margin: 1vmin 10vmin 2vmin 10vmin;
+          font-size: 3.5vmin;
+        }
+
+        .hero-slider {
+          margin-top: 0vmin;
+          padding-top: 0vmin;
+        }
+
+        .rocket-svg {
+          top: 20vmin;
+          right: -3vmin;
+        }
+
+        .explain-box-heading svg,
+        .staff-box-heading svg {
+          display: none !important;
+        }
+      }
+
       /* Small Laptops */
       @media only screen and (min-width: 1025px) {
+        .svg-wrapper {
+          display: none;
+        }
         .mfooter {
           margin-top: 0vmin;
         }
+
+        .hero-slider h1,
+        .hero-slider p {
+          width: 100%;
+          padding: 0 10vmin;
+          padding-right: 40vw;
+          margin: 0;
+        }
+
+        .hero-slider p {
+          margin: 3vmin 10vmin 8.5vmin 0vmin;
+        }
+        .hero-buttons {
+          flex-direction: row;
+          justify-content: flex-start;
+        }
+
+        .small-laptop-image {
+          display: block;
+          position: absolute;
+
+          right: 0;
+          height: 100%;
+          padding: 0 10vmin;
+          width: fit-content;
+          background: #000;
+
+          display: flex;
+          align-items: center;
+        }
+
+        .small-laptop-image img {
+          width: 40vmin;
+        }
+
+        .hero-buttons button {
+          padding: 0 10vmin;
+        }
+
+        .hero-slider h1 {
+          margin-right: 1.5vmin;
+        }
+
+        .explain-item-text {
+          padding: 0 20vw;
+        }
+
+        .box-heading {
+          padding: 0 30vmin;
+        }
+
+        .team-carousel-container,
+        .staff-carousel-container {
+          padding: 5vmin 20vmin;
+        }
+
+        .staff-picture-item {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .staff-picture-item img {
+          margin-right: 0;
+        }
+        .staff-picture-name {
+          text-align: center;
+        }
+
+        .contact-form-title,
+        .contact-form-text {
+          text-align: left;
+        }
+
+        .slider-caption {
+          justify-content: center;
+          align-items: center;
+
+          height: unset;
+          padding: 0;
+          margin-top: 0;
+        }
+
+        .slider-caption p {
+          color: #000;
+          font-size: 5vmin;
+        }
+      }
+
+      /* 15' Laptops */
+      @media only screen and (min-width: 1200px) {
+        .explain-item-text {
+          padding: 0;
+        }
+        .small-laptop-image {
+          display: none;
+        }
+        .hero-slider h1,
+        .hero-slider p {
+          padding: 0 10vmin;
+          padding-right: 10vw;
+        }
+
+        .hero-slider p {
+          margin-right: 1.5vmin;
+          /* background: #000; */
+        }
+
+        .hero-image {
+          display: flex;
+          align-items: center;
+
+          background: #000;
+        }
+
+        .hero-image img {
+          width: 60%;
+        }
+
+        .explain-text-last {
+          padding: 0 20vw;
+        }
       }
     </style>
+    <script src="../index.js"></script>
   </body>
 </html>

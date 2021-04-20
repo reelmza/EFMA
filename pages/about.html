@@ -60,12 +60,12 @@
 
             <ul class="mobile-nav-dropdown">
               <li><a href="/">HOME</a></li>
-              <li><a href="/about.html">ABOUT</a></li>
-              <li><a href="/service.html">SERVICE</a></li>
-              <li><a href="/#">GUEST BOOK</a></li>
-              <li><a href="/#">GALLERY</a></li>
-              <li><a href="/#">MISSION & VISION</a></li>
-              <li class="last"><a href="#contact">CONTACT</a></li>
+              <li><a href="pages/about.html">ABOUT</a></li>
+              <li><a href="pages/services.html">SERVICE</a></li>
+              <li><a href="pages/guestbook.html">GUEST BOOK</a></li>
+              <li><a href="/pages/gallery.html">GALLERY</a></li>
+              <li><a href="pages/mission.html#">MISSION & VISION</a></li>
+              <li class="last"><a href="pages/contact.html">CONTACT</a></li>
             </ul>
           </div>
           <div class="desktop-nav d-md-flex">
@@ -605,5 +605,29 @@
         }
       }
     </style>
+    <script>
+      const sidebarBtn = document.getElementsByClassName("bar-icon")[0];
+      const sidebar_dropdown = document.getElementsByClassName(
+        "mobile-nav-dropdown"
+      )[0];
+
+      const searchBtn = document.getElementsByClassName("search-icon")[0];
+      const searchInput = document.getElementById("site-search");
+
+      let sidebar_state = 0;
+      let search_state = 0;
+
+      sidebarBtn.addEventListener("click", function () {
+        console.log("Sidebar Click");
+        if (sidebar_state == 0) {
+          sidebar_dropdown.style.height = "100vh";
+          sidebar_dropdown.style.top = "16vh";
+          return (sidebar_state = 1);
+        }
+        sidebar_dropdown.style.height = "0px";
+        sidebar_dropdown.style.top = "-14vh";
+        return (sidebar_state = 0);
+      });
+    </script>
   </body>
 </html>

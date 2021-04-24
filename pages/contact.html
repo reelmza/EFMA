@@ -71,18 +71,20 @@
           </div>
           <div class="desktop-nav d-md-flex">
             <ul>
-              <li><a href="#" style="color: #bd202e">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contacts</a></li>
+              <li>
+                <a href="about.html" style="color: #bd202e">About</a>
+              </li>
+              <li><a href="services.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Others</a></li>
             </ul>
           </div>
         </div>
       </div>
 
       <div class="section contact container-fluid" id="contact">
-        <div class="row">
-          <div class="col-12 col-xl-6 mfooter">
+        <div class="row d-flex justify-content-between">
+          <div class="col-12 mfooter">
             <h6 class="contact-form-title">ADRESS</h6>
             <p class="contact-form-text">
               Penthhouse Suit,Plot 1019,<br />
@@ -103,12 +105,12 @@
             <p class="contact-form-text">
               <a href="https://facebook.com/theEFMA">@theEFMA</a>
             </p>
-
-            <h6 class="contact-form-title text-center text-xl-left mt-2">
-              Powered By <br />
-              OAYASTECH &COPY; 2021
-            </h6>
           </div>
+          <h6 class="col-12 contact-form-title text-center mt-5">
+            <div class="mt-5 mb-5"></div>
+            Powered By <br />
+            OAYASTECH &COPY; 2021
+          </h6>
         </div>
       </div>
     </div>
@@ -325,13 +327,17 @@
 
       .contact {
         padding: 10vmin;
+        height: 87vh;
       }
       .contact-form-title {
         font-size: 4vmin;
       }
+      .contact-form-text {
+        font-size: 3vmin;
+      }
 
       .mfooter {
-        margin-top: 10vmin;
+        /* margin-top: 10vmin; */
       }
 
       /* Pads & Small laptops*/
@@ -449,6 +455,10 @@
         .contact-form-title,
         .contact-form-text {
           text-align: left;
+        }
+
+        .contact-form-text {
+          font-size: 3vmin;
         }
 
         .slider-caption {

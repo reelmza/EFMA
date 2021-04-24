@@ -295,7 +295,7 @@ h6 {
   align-items: flex-start;
   justify-content: flex-start;
 
-  padding-top: 5vmin;
+  padding-top: 10vmin;
 }
 
 .hero-slider h1 {
@@ -577,7 +577,7 @@ h6 {
 /* MESSAGE                               //// */
 
 .contact {
-  padding: 10vmin;
+  /* padding: 10vmin; */
 }
 
 .contact-form {
@@ -620,14 +620,19 @@ h6 {
 }
 
 .mfooter {
-  margin-top: 10vmin;
+  /* margin-top: 10vmin; */
 }
 
 /* Pads & Small laptops*/
 @media only screen and (min-width: 768px) {
+  .hero-slider {
+    justify-content: center;
+    padding-top: 0px;
+  }
+
   .hero-slider h1 {
-    font-size: 10.5vmin;
-    margin: 5vmin 10vmin 0 10vmin;
+    font-size: 11.5vmin;
+    margin: 0vmin 10vmin 0 10vmin;
     padding-bottom: 0vmin;
   }
 
@@ -639,13 +644,16 @@ h6 {
   }
 
   .hero-slider p {
-    margin: 1vmin 10vmin 2vmin 10vmin;
-    font-size: 3.5vmin;
+    margin: 4vmin 10vmin 2vmin 10vmin;
+    font-size: 4.5vmin;
   }
 
   .hero-slider {
     margin-top: 0vmin;
     padding-top: 0vmin;
+  }
+  .svg-wrapper {
+    display: none;
   }
 
   .rocket-svg {
@@ -675,8 +683,12 @@ h6 {
     padding-right: 40vw;
     margin: 0;
   }
-
+  .hero-slider h1 {
+    margin-right: 1.5vmin;
+    font-size: 8.5vmin;
+  }
   .hero-slider p {
+    font-size: 4vmin;
     margin: 3vmin 10vmin 8.5vmin 0vmin;
   }
   .hero-buttons {
@@ -703,11 +715,7 @@ h6 {
   }
 
   .hero-buttons button {
-    padding: 0 10vmin;
-  }
-
-  .hero-slider h1 {
-    margin-right: 1.5vmin;
+    padding: 0 9.5vmin;
   }
 
   .explain-item-text {
@@ -734,7 +742,9 @@ h6 {
   .staff-picture-name {
     text-align: center;
   }
-
+  .patners-logo-item-first {
+    padding-bottom: 0;
+  }
   .contact-form-title,
   .contact-form-text {
     text-align: left;
@@ -763,6 +773,7 @@ h6 {
   .small-laptop-image {
     display: none;
   }
+
   .hero-slider h1,
   .hero-slider p {
     padding: 0 10vmin;

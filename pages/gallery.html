@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guest Book</title>
+    <title>Gallery</title>
 
     <link
       rel="stylesheet"
@@ -83,27 +83,78 @@
         </div>
       </div>
 
-      <div class="section contact container-fluid" id="contact">
-        <div class="row">
-          <div class="col-12">
-            <h6 class="contact-form-title text-center">SEND A MESSAGE</h6>
-            <form class="contact-form">
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="E-mail" />
-              <textarea
-                name="contact-mesage"
-                cols="30"
-                rows="10"
-                placeholder="Your Message"
-              ></textarea>
-
-              <button type="submit">SEND</button>
-            </form>
-
-            <h6 class="contact-form-title mt-5 text-center">
-              Powered By <br />
-              OAYASTECH &COPY; 2021
-            </h6>
+      <div class="section gallery container-fluid">
+        <div class="row gallery-heading-row mb-2">
+          <div class="col-12 gallery-heading">
+            <div class="gallery-heading-text">
+              <h3>Mubi Torunament</h3>
+              <em>Click To Toggle</em>
+            </div>
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                fill="none"
+                d="M13.388,9.624h-3.011v-3.01c0-0.208-0.168-0.377-0.376-0.377S9.624,6.405,9.624,6.613v3.01H6.613c-0.208,0-0.376,0.168-0.376,0.376s0.168,0.376,0.376,0.376h3.011v3.01c0,0.208,0.168,0.378,0.376,0.378s0.376-0.17,0.376-0.378v-3.01h3.011c0.207,0,0.377-0.168,0.377-0.376S13.595,9.624,13.388,9.624z M10,1.344c-4.781,0-8.656,3.875-8.656,8.656c0,4.781,3.875,8.656,8.656,8.656c4.781,0,8.656-3.875,8.656-8.656C18.656,5.219,14.781,1.344,10,1.344z M10,17.903c-4.365,0-7.904-3.538-7.904-7.903S5.635,2.096,10,2.096S17.903,5.635,17.903,10S14.365,17.903,10,17.903z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="row gallery-row">
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/1.jpg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>EFMA officials on pitch before Mubi Tournament Finals.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/2.jpg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>Golden Stars players starting XI posing before kick-off</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/3.jpg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>
+                All stars players accepting medals at Mubi tournament finals.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/4.jpg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>Golden Stars right-back accepting the best player award.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/5.jpg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>EFMA Director Strategy & Ops. handing medals to Referees</p>
+            </div>
           </div>
         </div>
       </div>
@@ -182,10 +233,30 @@
         padding: 0;
       }
 
+      /* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+      .svg-icon {
+        width: 1em;
+        height: 1em;
+      }
+
+      .svg-icon path,
+      .svg-icon polygon,
+      .svg-icon rect {
+        fill: #000;
+      }
+
+      .svg-icon circle {
+        stroke: #000;
+        stroke-width: 1;
+      }
+
       .header {
         height: 13vh;
         width: 100vw;
-        padding: 0 11vmin;
+        padding: 0 10vmin;
 
         position: fixed;
         top: 0;
@@ -226,7 +297,6 @@
         align-items: center;
         height: 100%;
       }
-
       .desktop-nav ul {
         display: flex;
         align-items: center;
@@ -321,59 +391,61 @@
         font-weight: 600;
       }
 
-      /* MESSAGE                               //// */
+      /* Gallery                               //// */
 
-      .contact {
-        padding: 10vmin;
+      .gallery {
+        padding: 0vmin 10vmin 0 10vmin;
+        height: 87vh;
       }
 
-      .contact-form {
+      .gallery-heading {
+        padding: 2vmin 2vmin;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .gallery-heading h3 {
+        font-size: 3.5vmin;
+      }
+      .gallery-heading em {
+        font-size: 2vmin;
+      }
+      .gallery-heading-text {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
       }
-
-      .contact-form input,
-      .contact-form textarea {
-        font-size: 4vmin;
-
-        width: 100%;
-        margin-bottom: 3vmin;
-        padding: 5vmin 3vmin;
+      .gallery-row {
+        display: none;
       }
-
-      .contact-form textarea {
-        height: 40vmin;
+      .gallery-heading-row {
+        cursor: pointer;
+        background: #f7f7f7;
       }
-
-      .contact-form button {
-        padding: 4.5vmin 20vmin;
-        font-size: 4vmin;
-        background: var(--theme);
-        color: #fff;
-        border: none;
+      .caption-wrapper {
+        padding: 2vmin;
+        margin: 2vmin 0;
+        border-radius: 5px;
+        background: #f7f7f7;
       }
-
-      .contact-form-title {
-        font-size: 4vmin;
-        margin-bottom: 1vmin;
-        text-align: center;
-      }
-
-      .contact-form-text {
+      .caption-wrapper p {
         font-size: 3.5vmin;
-        font-weight: 200;
-        text-align: center;
+        margin-bottom: 0;
       }
 
-      .mfooter {
-        margin-top: 10vmin;
+      .image-wrapper img {
+        width: 100%;
       }
 
       /* Small Laptops */
       @media only screen and (min-width: 1025px) {
         .mfooter {
           margin-top: 0vmin;
+        }
+        .caption-wrapper p {
+          font-size: 3vmin;
         }
       }
     </style>
@@ -387,8 +459,14 @@
       const searchBtn = document.getElementsByClassName("search-icon")[0];
       const searchInput = document.getElementById("site-search");
 
+      const galleryButton = document.getElementsByClassName(
+        "gallery-heading-row"
+      )[0];
+      const galleryRow = document.getElementsByClassName("gallery-row")[0];
+
       let sidebar_state = 0;
       let search_state = 0;
+      let galleryState = 0;
 
       sidebarBtn.addEventListener("click", function () {
         console.log("Sidebar Click");
@@ -400,6 +478,16 @@
         sidebar_dropdown.style.height = "0px";
         sidebar_dropdown.style.top = "-14vh";
         return (sidebar_state = 0);
+      });
+
+      galleryButton.addEventListener("click", function () {
+        if (galleryState == 0) {
+          galleryRow.style.display = "flex";
+          return (galleryState = 1);
+        }
+
+        galleryRow.style.display = "none";
+        return (galleryState = 0);
       });
     </script>
   </body>

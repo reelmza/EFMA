@@ -83,7 +83,7 @@
         </div>
       </div>
 
-      <div class="section contact container-fluid" id="contact">
+      <!-- <div class="section contact container-fluid" id="contact">
         <div class="row">
           <div class="col-12">
             <h6 class="contact-form-title text-center">SEND A MESSAGE</h6>
@@ -106,6 +106,48 @@
             </h6>
           </div>
         </div>
+      </div> -->
+      <div class="section contact container-fluid">
+        <form
+          action="https://postmail.invotes.com/send"
+          method="post"
+          id="email_form"
+        >
+          <input type="text" name="subject" placeholder="Full Name" />
+          <textarea name="text" placeholder="Enter Message"></textarea>
+          <input
+            type="hidden"
+            name="access_token"
+            value="f69v39o9hsd3fkd6ydxpi22w"
+          />
+          <!-- return urls can be fully qualified -OR-
+start with / for root relative -OR-
+start with . for url relative -->
+          <input
+            type="hidden"
+            name="success_url"
+            value=".pages/emailsent.html"
+          />
+          <input type="hidden" name="error_url" value=".emailnotsent.html" />
+
+          <!-- set the reply-to address -->
+          <!-- <input type="text" name="reply_to"
+      placeholder="Your Email" /> -->
+
+          <!-- to append extra fields, use the extra_ prefix.
+Entries will be appended to your message body. -->
+          <!-- <input type="text" name="extra_phone_number"
+      placeholder="Phone Number" /> -->
+
+          <!-- to split your message into 160 chars
+for an sms gateway -->
+          <!-- <input type="hidden"
+      name="sms_format" value="true" /> -->
+
+          <input id="submit_form" type="submit" value="SEND" />
+          <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+          <p>We get back to you ASAP</p>
+        </form>
       </div>
     </div>
 
@@ -327,47 +369,43 @@
         padding: 10vmin;
       }
 
-      .contact-form {
+      form {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
 
-      .contact-form input,
-      .contact-form textarea {
-        font-size: 4vmin;
-
-        width: 100%;
-        margin-bottom: 3vmin;
-        padding: 5vmin 3vmin;
-      }
-
-      .contact-form textarea {
-        height: 40vmin;
-      }
-
-      .contact-form button {
-        padding: 4.5vmin 20vmin;
-        font-size: 4vmin;
-        background: var(--theme);
-        color: #fff;
-        border: none;
-      }
-
-      .contact-form-title {
-        font-size: 4vmin;
+      form input,
+      form textarea {
+        padding: 3vmin;
+        font-size: 3vmin;
         margin-bottom: 1vmin;
-        text-align: center;
+        width: 80vmin;
+        border: solid 1px rgb(228, 228, 228);
+        border-radius: 5px;
       }
 
-      .contact-form-text {
-        font-size: 3.5vmin;
-        font-weight: 200;
-        text-align: center;
+      form input:focus,
+      form textarea:focus {
+        outline: none;
       }
 
-      .mfooter {
-        margin-top: 10vmin;
+      form textarea {
+        min-height: 50vmin;
+      }
+
+      form p {
+        font-size: 3vmin;
+      }
+
+      #submit_form {
+        background: rgb(209, 0, 0);
+        color: #fff;
+        font-size: 3vmin;
+        cursor: pointer;
+      }
+      #submit_form:hover {
+        background: rgb(155, 0, 0);
       }
 
       /* Small Laptops */
@@ -400,6 +438,16 @@
         sidebar_dropdown.style.height = "0px";
         sidebar_dropdown.style.top = "-14vh";
         return (sidebar_state = 0);
+      });
+
+      //optional, prevents the submit button from being pressed more than once
+      var submitButton = document.getElementById("submit_form");
+      var form = document.getElementById("email_form");
+      form.addEventListener("submit", function (e) {
+        setTimeout(function () {
+          submitButton.value = "Sending...";
+          submitButton.disabled = true;
+        }, 1);
       });
     </script>
   </body>

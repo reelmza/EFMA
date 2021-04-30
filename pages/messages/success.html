@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Sent</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="message-wrapper">
+        <h1 class="message-text">MESSAGE SENT!</h1>
+        <p class="message-emphasis">
+          Click the link below to go return to home page
+        </p>
+      </div>
+
+      <div class="button-wrapper">
+        <a href="/">HOME PAGE</a>
+      </div>
+
+      <p class="message-footer">EFMA 2021 <br /></p>
+    </div>
+
+    <style>
+      html {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+      :root {
+        --background: #fff;
+        --foreground: #000;
+        --theme: #ce192b;
+
+        --global-padding: 0 10vmin;
+        --animate-duration: 1000ms;
+      }
+
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        font-family: "Bitter", "Trebuchet MS", "Lucida Sans Unicode", arial;
+      }
+
+      .main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .message-wrapper {
+        width: 70vmin;
+        padding: 3vmin 0;
+      }
+
+      .message-text {
+        text-align: center;
+        font-size: 7vmin;
+      }
+
+      .message-emphasis {
+        text-align: center;
+        font-size: 4vmin;
+        padding: 0 5vmin;
+        margin-top: 1vmin;
+
+        font-weight: 300;
+      }
+
+      .button-wrapper {
+        margin-top: 3vmin;
+        background: rgb(4, 173, 89);
+        width: 70vmin;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .button-wrapper:hover {
+        background: #000000;
+      }
+
+      .button-wrapper a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 4vmin;
+        width: 100%;
+        display: block;
+        padding: 4vmin;
+        font-weight: 700;
+      }
+
+      .message-footer {
+        margin-top: 1vmin;
+        font-size: 3vmin;
+      }
+    </style>
+  </body>
+</html>

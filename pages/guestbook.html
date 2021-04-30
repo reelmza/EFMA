@@ -126,9 +126,13 @@ start with . for url relative -->
           <input
             type="hidden"
             name="success_url"
-            value=".pages/emailsent.html"
+            value=".pages/messages/success.html"
           />
-          <input type="hidden" name="error_url" value=".emailnotsent.html" />
+          <input
+            type="hidden"
+            name="error_url"
+            value=".pages/messages/error.html"
+          />
 
           <!-- set the reply-to address -->
           <!-- <input type="text" name="reply_to"
@@ -366,7 +370,7 @@ for an sms gateway -->
       /* MESSAGE                               //// */
 
       .contact {
-        padding: 10vmin;
+        padding: 0vmin 10vmin 0vmin 10vmin;
       }
 
       form {
@@ -377,8 +381,8 @@ for an sms gateway -->
 
       form input,
       form textarea {
-        padding: 3vmin;
-        font-size: 3vmin;
+        padding: 4vmin;
+        font-size: 4vmin;
         margin-bottom: 1vmin;
         width: 80vmin;
         border: solid 1px rgb(228, 228, 228);
@@ -391,7 +395,7 @@ for an sms gateway -->
       }
 
       form textarea {
-        min-height: 50vmin;
+        min-height: 80vmin;
       }
 
       form p {
@@ -402,6 +406,7 @@ for an sms gateway -->
         background: rgb(209, 0, 0);
         color: #fff;
         font-size: 3vmin;
+        padding: 5vmin 0;
         cursor: pointer;
       }
       #submit_form:hover {
@@ -412,6 +417,9 @@ for an sms gateway -->
       @media only screen and (min-width: 1025px) {
         .mfooter {
           margin-top: 0vmin;
+        }
+        form textarea {
+          min-height: 45vmin;
         }
       }
     </style>

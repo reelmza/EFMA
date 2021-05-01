@@ -84,20 +84,6 @@
       </div>
 
       <div class="section gallery container-fluid">
-        <div class="row gallery-heading-row mb-2">
-          <div class="col-12 gallery-heading">
-            <div class="gallery-heading-text">
-              <h3>Mubi Tournament</h3>
-              <em>Click To Toggle</em>
-            </div>
-            <svg class="svg-icon" viewBox="0 0 20 20">
-              <path
-                fill="none"
-                d="M13.388,9.624h-3.011v-3.01c0-0.208-0.168-0.377-0.376-0.377S9.624,6.405,9.624,6.613v3.01H6.613c-0.208,0-0.376,0.168-0.376,0.376s0.168,0.376,0.376,0.376h3.011v3.01c0,0.208,0.168,0.378,0.376,0.378s0.376-0.17,0.376-0.378v-3.01h3.011c0.207,0,0.377-0.168,0.377-0.376S13.595,9.624,13.388,9.624z M10,1.344c-4.781,0-8.656,3.875-8.656,8.656c0,4.781,3.875,8.656,8.656,8.656c4.781,0,8.656-3.875,8.656-8.656C18.656,5.219,14.781,1.344,10,1.344z M10,17.903c-4.365,0-7.904-3.538-7.904-7.903S5.635,2.096,10,2.096S17.903,5.635,17.903,10S14.365,17.903,10,17.903z"
-              ></path>
-            </svg>
-          </div>
-        </div>
         <div class="row gallery-row">
           <div class="col-12 col-md-6 col-lg-4 gallery-col">
             <div class="image-wrapper">
@@ -107,7 +93,7 @@
               />
             </div>
             <div class="caption-wrapper">
-              <p>EFMA officials on pitch before Mubi Tournament Finals.</p>
+              <p>EFMA officials before the Mubi Tournament Finals.</p>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 gallery-col">
@@ -152,6 +138,79 @@
             </div>
             <div class="caption-wrapper">
               <p>EFMA Director Strategy & Ops. handing medals to Referees</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/6.jpg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>
+                EFMA Staff's visit to Adamawa State University to withness a
+                local league final.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/7.jpeg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>EFMA Staffs with Mr. Shekari at AS Roma Academy Abuja.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/8.jpeg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>EFMA Director Strategy & Ops. with AS Roma staffs.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/9.jpeg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>EFMA Director Strategy & Ops. at AS Roma Academy Abuja</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/10.jpeg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>EFMA Mubi branch staffs posing at the Mubi Tournament.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 gallery-col">
+            <div class="image-wrapper">
+              <img
+                src="/src/images/other_images/Gallery_Pics/11.jpeg"
+                alt="March"
+              />
+            </div>
+            <div class="caption-wrapper">
+              <p>
+                Mubi North local government chairman handing the winner's cup to
+                golden stars captain.
+              </p>
             </div>
           </div>
         </div>
@@ -396,37 +455,17 @@ SVG Icons - svgicons.sparkk.fr
         height: 87vh;
       }
 
-      .gallery-heading {
-        padding: 2vmin 2vmin;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .gallery-heading h3 {
-        font-size: 5vmin;
-      }
-      .gallery-heading em {
-        font-size: 3.5vmin;
-      }
-      .gallery-heading-text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-      }
       .gallery-row {
-        display: none;
+        display: flex;
       }
       .gallery-heading-row {
         cursor: pointer;
         background: #f7f7f7;
       }
       .caption-wrapper {
-        padding: 5vmin;
+        padding: 5vmin 2vmin;
         margin: 2vmin 0;
         border-radius: 5px;
-        background: #f7f7f7;
       }
       .caption-wrapper p {
         font-size: 3.5vmin;
@@ -457,14 +496,8 @@ SVG Icons - svgicons.sparkk.fr
       const searchBtn = document.getElementsByClassName("search-icon")[0];
       const searchInput = document.getElementById("site-search");
 
-      const galleryButton = document.getElementsByClassName(
-        "gallery-heading-row"
-      )[0];
-      const galleryRow = document.getElementsByClassName("gallery-row")[0];
-
       let sidebar_state = 0;
       let search_state = 0;
-      let galleryState = 0;
 
       sidebarBtn.addEventListener("click", function () {
         console.log("Sidebar Click");
@@ -476,16 +509,6 @@ SVG Icons - svgicons.sparkk.fr
         sidebar_dropdown.style.height = "0px";
         sidebar_dropdown.style.top = "-14vh";
         return (sidebar_state = 0);
-      });
-
-      galleryButton.addEventListener("click", function () {
-        if (galleryState == 0) {
-          galleryRow.style.display = "flex";
-          return (galleryState = 1);
-        }
-
-        galleryRow.style.display = "none";
-        return (galleryState = 0);
       });
     </script>
   </body>

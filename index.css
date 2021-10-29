@@ -362,9 +362,12 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.patners-logo-item-first {
+
   padding-bottom: 20vmin;
+}
+
+.patners-logo-item-last {
+  padding-bottom: 0;
 }
 
 .patners-logo-item img {

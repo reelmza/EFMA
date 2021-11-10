@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <div class="main container-fluid px-0">
+    <div class="main container-fluid px-0 pt-5">
       <div class="header">
         <div class="logo-box">
           <a href="/"
@@ -114,13 +114,16 @@
               <a href=https://twitter.com/official_efma>Twitter: @official_efma</a>
             </p>
           </div>
-          <h6 class="col-12 contact-form-title text-center mt-5">
-            <div class="mt-5 mb-5"></div>
+          <h6 class="col-12 contact-form-title text-center footer-text mt-4">
+            <div class="mt-5 mb-2"></div>
             Powered By <br />
-           <a href=https://oayastech.com>OAYASTECH</a> &COPY; 2021
+           <a href=https://oayastech.com>OayasTech</a> &COPY; 2021
           </h6>
         </div>
       </div>
+    </div>
+    <div class="container-fluid svg-box px-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#bd202e" fill-opacity="1" d="M0,96L1440,320L1440,0L0,0Z"></path></svg>
     </div>
     <style>
       html {
@@ -211,6 +214,13 @@
         z-index: 6;
       }
 
+      .svg-box {
+        position: absolute;
+        top: 13vh;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+      }
       /* LOGO                                            //// */
       .logo-box {
         height: 7vh;
@@ -340,9 +350,11 @@
       .contact-form-title {
         font-size: 4vmin;
       }
-      .contact-form-text {
-        font-size: 3vmin;
+
+      .footer-text {
+        font-size: 2vmin;
       }
+
 
 
       /* Pads & Small laptops*/

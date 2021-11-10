@@ -84,7 +84,7 @@
         </div>
       </div>
 
-      <div class="section contact container-fluid" id="contact">
+      <div class="section contact container-fluid mt-5" id="contact">
         <div class="row">
           <div class="col-12 mfooter">
             <h6 class="contact-form-title">Player Representative</h6>
@@ -124,13 +124,22 @@
               the evolution and growth of the beautiful game at every level both
               international and locally.
             </p>
-            <h6 class="contact-form-title text-center mt-5">
+            <h6 class="contact-form-title footer-text text-center mt-5">
               Powered By <br />
-              OAYASTECH &COPY; 2021
+              OayasTech &COPY; 2021
             </h6>
           </div>
         </div>
       </div>
+    </div>
+    <div class="container-fluid svg-box px-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#bd202e"
+          fill-opacity="1"
+          d="M0,96L1440,320L1440,0L0,0Z"
+        ></path>
+      </svg>
     </div>
     <style>
       html {
@@ -221,7 +230,13 @@
         box-shadow: 0px -5px 10px #000;
         z-index: 6;
       }
-
+      .svg-box {
+        position: absolute;
+        top: 13vh;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+      }
       /* LOGO                                            //// */
       .logo-box {
         height: 7vh;
@@ -354,8 +369,8 @@
         font-size: 4vmin;
       }
 
-      .mfooter {
-        /* margin-top: 10vmin; */
+      .footer-text {
+        font-size: 2vmin;
       }
 
       /* Small Laptops */

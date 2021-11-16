@@ -3,13 +3,10 @@ new WOW().init();
 const sidebarBtn = document.getElementsByClassName('bar-icon')[0]
 const sidebar_dropdown = document.getElementsByClassName('mobile-nav-dropdown')[0]
 
-const searchBtn = document.getElementsByClassName('search-icon')[0]
-const searchInput = document.getElementById('site-search')
-
 let sidebar_state = 0
-let search_state = 0
 
-sidebarBtn.addEventListener('click', function () {
+sidebarBtn.addEventListener('click', function (e) {
+    e.preventDefault()
     console.log('Sidebar Click')
     if (sidebar_state == 0) {
         sidebar_dropdown.style.height = '100vh'
@@ -19,4 +16,9 @@ sidebarBtn.addEventListener('click', function () {
     sidebar_dropdown.style.height = '0px'
     sidebar_dropdown.style.top = "-14vh"
     return sidebar_state = 0
+})
+
+document.querySelector(".toggle-button").addEventListener("click", function (e) {
+    e.preventDefault()
+    return document.querySelector(":root").classList.toggle("dark")
 })

@@ -20,5 +20,7 @@ sidebarBtn.addEventListener('click', function (e) {
 
 document.querySelector(".toggle-button").addEventListener("click", function (e) {
     e.preventDefault()
+    document.querySelector(".nav_sun-icon").classList.toggle("hidden")
+    document.querySelector(".nav_moon-icon").classList.toggle("hidden")
     return document.querySelector(":root").classList.toggle("dark")
 })

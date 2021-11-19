@@ -13,6 +13,7 @@ sidebarBtn.addEventListener('click', function (e) {
         sidebar_dropdown.style.top = "16vh"
         return sidebar_state = 1
     }
+
     sidebar_dropdown.style.height = '0px'
     sidebar_dropdown.style.top = "-14vh"
     return sidebar_state = 0

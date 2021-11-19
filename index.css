@@ -202,7 +202,6 @@ body {
   min-height: 43vh;
   background-color: var(--dim-background);
   /* background: linear-gradient(180deg, var(--dim-background), var(--background)); */
-
   display: flex;
   align-items: center;
 }

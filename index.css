@@ -346,6 +346,16 @@ body {
 .sp-5 img {
   width: 30vmin;
 }
+
+.sp-6 {
+  top: 33vmin;
+  left: 10vmin;
+}
+
+.sp-7 {
+  top: 27vmin;
+  left: 75vw;
+}
 /* MESSAGE                               //// */
 .contact {
   height: 10vh;
@@ -440,8 +450,18 @@ body {
   .contact-form-title {
     font-size: 3vmin;
   }
+  .patners-logo {
+    height: 45vh;
+  }
   .sp-5 {
     top: 10vmin;
+  }
+  .sp-6 {
+    top: 10vmin;
+    left: 83vw;
+  }
+  .sp-7 {
+    left: 5vw;
   }
 }
 

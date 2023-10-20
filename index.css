@@ -314,12 +314,12 @@ body {
   justify-content: space-evenly;
 }
 
-/* .patners-logo-item {
- 
-} */
+.patners-logo-item {
+ height: 10vmin;
+}
 
 .patners-logo-item img {
-  height: 10vmin;
+  height: 100%;
 }
 
 
@@ -356,12 +356,7 @@ body {
     margin: 4vmin 10vmin 2vmin 10vmin;
     font-size: 4.5vmin;
   }
-  .sp-5 {
-    top: 30vmin;
-    right: 25%;
-    left: unset;
-    width: fit-content;
-  }
+
 
   .hero-scroll,
   .hero-wave {
@@ -408,29 +403,10 @@ body {
     width: 40vmin;
   }
 
-  /* .box-heading {
-    padding: 0 13vmin;
-  } */
-
-  .patners-logo-item-first {
-    padding-bottom: 0;
-  }
   .contact-form-title {
     font-size: 3vmin;
   }
-  .patners-logo {
-    height: 45vh;
-  }
-  .sp-5 {
-    top: 10vmin;
-  }
-  .sp-6 {
-    top: 10vmin;
-    left: 83vw;
-  }
-  .sp-7 {
-    left: 5vw;
-  }
+
 }
 
 /* 15' Laptops */

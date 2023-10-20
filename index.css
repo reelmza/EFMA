@@ -306,56 +306,23 @@ body {
 .patners-logo {
   position: relative;
   height: 34vh;
+  padding: 0 10vmin;
   background: var(--background);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .patners-logo-item {
-  position: absolute;
-  top: 0;
+ 
 }
 
 .patners-logo-item img {
-  width: 15vmin;
+  height: 10vmin;
 }
 
-.sp-1 {
-  left: 10vmin;
-  top: 9vmin;
-}
 
-.sp-2 {
-  left: 30vmin;
-  top: 8vmin;
-}
-
-.sp-3 {
-  left: 55vmin;
-  top: 7vmin;
-}
-
-.sp-4 {
-  left: 80vmin;
-  top: 8vmin;
-}
-
-.sp-5 {
-  top: 31vmin;
-  left: 35vmin;
-}
-
-.sp-5 img {
-  width: 30vmin;
-}
-
-.sp-6 {
-  top: 33vmin;
-  left: 10vmin;
-}
-
-.sp-7 {
-  top: 27vmin;
-  left: 75vw;
-}
 /* MESSAGE                               //// */
 .contact {
   height: 10vh;
@@ -368,6 +335,7 @@ body {
   font-weight: 300;
   margin-bottom: 0;
 }
+
 
 /* Pads & Small laptops*/
 @media only screen and (min-width: 768px) {

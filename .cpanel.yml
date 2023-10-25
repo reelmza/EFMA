@@ -1,6 +1,5 @@
 ---
 deployment:
- tasks:
- - export DEPLOYPATH=/home/executive01/public_html/
- - /bin/cp index.html $DEPLOYPATH
- - /bin/cp style.css $DEPLOYPATH
+      tasks:
+        - export DEPLOYPATH=/home/executive01/public_html  # Add /<app_folder> if required
+        - /bin cp * $DEPLOYPATH                           #copy all from root 
